@@ -1,0 +1,33 @@
+# Vivado Project Files 
+*.jou
+*.log
+*.str
+*.bin
+*.pb
+*.xml
+*.html
+*.vcd
+*.wdb
+*.backup
+*.cache
+*.tmp
+
+# Vivado folders
+.Xil/
+.cache/
+.hw/
+.sim/
+.runs/
+.webtalk/
+vivado_project_files/
+project_*
+
+# IP and synth generated content
+.ip_user_files/
+.gen/
+*.xpr
+*.xpr.backup
+
+# OS-specific Files 
+.DS_Store
+Thumbs.db
