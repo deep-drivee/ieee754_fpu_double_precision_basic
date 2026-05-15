@@ -1,0 +1,34 @@
+Dashboard
+
+Date: Tue May 12 19:48:20 2026
+
+User: vuser
+
+Version: U-2023.03
+Command line: urg -dir simv_sva_cov.vdb -report cov_report_sva -format both
+Number of tests: 2
+
+-------------------------------------------------------------------------------
+Total Coverage Summary 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT GROUP  
+ 92.39  93.99  92.21  82.71  87.50  90.30 100.00 100.00 
+
+
+-------------------------------------------------------------------------------
+Hierarchical coverage data for top-level instances 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT NAME                         
+ 92.03  96.39  92.63  82.71  87.50  92.95 100.00 tb_fpu_sv                    
+ 28.48  30.43  25.00 --     --      30.00 --     uvm_custom_install_recording 
+
+
+-------------------------------------------------------------------------------
+Total Module Definition Coverage Summary 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT 
+ 90.81  93.18  90.93  84.28  87.50  89.00 100.00 
+
+
+-------------------------------------------------------------------------------
+Total Groups Coverage Summary 
+SCORE  INST SCORE WEIGHT 
+100.00 100.00     1      
+

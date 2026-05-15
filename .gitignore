@@ -4,8 +4,6 @@
 *.str
 *.bin
 *.pb
-*.xml
-*.html
 *.vcd
 *.wdb
 *.backup
@@ -28,6 +26,25 @@ project_*
 *.xpr
 *.xpr.backup
 
+# VCS build artifacts
+csrc/
+simv*
+simv*.daidir/
+*.vdb/
+urgReport/
+ucli.key
+DVEfiles/
+inter.vpd
+
+# Questa build artifacts
+work/
+transcript
+vsim.wlf
+
+# Zip and temp files
+*.zip
+
 # OS-specific Files 
 .DS_Store
 Thumbs.db
+

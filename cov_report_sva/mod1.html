@@ -1,0 +1,5189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: fp_add</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | <a href="groups.html" ><b>groups</b></a> | <a href="tests.html" ><b>tests</b></a> | <a href="asserts.html" ><b>asserts</b></a></div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_fp_add'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_fp_add')">fp_add</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s9 cl rt"> 92.04</td>
+<td class="s9 cl rt"><a href="mod1.html#Line" > 98.08</a></td>
+<td class="s9 cl rt"><a href="mod1.html#Cond" > 99.02</a></td>
+<td class="s7 cl rt"><a href="mod1.html#Toggle" > 73.75</a></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod1.html#Branch" > 97.30</a></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/home/vuser/speed/projects/src/fp_add.v')">/home/vuser/speed/projects/src/fp_add.v</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod1.html#inst_tag_1"  onclick="showContent('inst_tag_1')">tb_fpu_sv.dut.adder</a></td>
+<td class="s9 cl rt"> 92.04</td>
+<td class="s9 cl rt"><a href="mod1.html#inst_tag_1_Line" > 98.08</a></td>
+<td class="s9 cl rt"><a href="mod1.html#inst_tag_1_Cond" > 99.02</a></td>
+<td class="s7 cl rt"><a href="mod1.html#inst_tag_1_Toggle" > 73.75</a></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod1.html#inst_tag_1_Branch" > 97.30</a></td>
+<td class="wht cl rt"></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod1.html#inst_tag_2"  onclick="showContent('inst_tag_2')">tb_fpu_sv.dut.subtractor.adder</a></td>
+<td class="s9 cl rt"> 92.04</td>
+<td class="s9 cl rt"><a href="mod1.html#inst_tag_2_Line" > 98.08</a></td>
+<td class="s9 cl rt"><a href="mod1.html#inst_tag_2_Cond" > 99.02</a></td>
+<td class="s7 cl rt"><a href="mod1.html#inst_tag_2_Toggle" > 73.75</a></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod1.html#inst_tag_2_Branch" > 97.30</a></td>
+<td class="wht cl rt"></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='inst_tag_1'>
+<hr>
+<a name="inst_tag_1"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_1" >tb_fpu_sv.dut.adder</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s9 cl rt"> 92.04</td>
+<td class="s9 cl rt"><a href="mod1.html#inst_tag_1_Line" > 98.08</a></td>
+<td class="s9 cl rt"><a href="mod1.html#inst_tag_1_Cond" > 99.02</a></td>
+<td class="s7 cl rt"><a href="mod1.html#inst_tag_1_Toggle" > 73.75</a></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod1.html#inst_tag_1_Branch" > 97.30</a></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s9 cl rt"> 92.04</td>
+<td class="s9 cl rt"> 98.08</td>
+<td class="s9 cl rt"> 99.02</td>
+<td class="s7 cl rt"> 73.75</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 97.30</td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s9 cl rt"> 96.64</td>
+<td class="s9 cl rt"> 96.77</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s9 cl rt"> 99.75</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s8 cl rt"> 86.67</td>
+<td class="wht cl rt"></td>
+<td><a href="mod7.html#inst_tag_8" >dut</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td colspan=8>no children</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div name='inst_tag_2'>
+<hr>
+<a name="inst_tag_2"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_2" >tb_fpu_sv.dut.subtractor.adder</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s9 cl rt"> 92.04</td>
+<td class="s9 cl rt"><a href="mod1.html#inst_tag_2_Line" > 98.08</a></td>
+<td class="s9 cl rt"><a href="mod1.html#inst_tag_2_Cond" > 99.02</a></td>
+<td class="s7 cl rt"><a href="mod1.html#inst_tag_2_Toggle" > 73.75</a></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod1.html#inst_tag_2_Branch" > 97.30</a></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s9 cl rt"> 92.04</td>
+<td class="s9 cl rt"> 98.08</td>
+<td class="s9 cl rt"> 99.02</td>
+<td class="s7 cl rt"> 73.75</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 97.30</td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s9 cl rt"> 99.81</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.81</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td><a href="mod10.html#inst_tag_11" >subtractor</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td colspan=8>no children</td>
+</tr></table><br clear=all>
+</div>
+</div>
+</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_fp_add'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod1.html" >fp_add</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s9"><td class="lf">TOTAL</td><td></td><td>104</td><td>102</td><td>98.08</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>38</td><td>31</td><td>31</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>84</td><td>31</td><td>31</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>147</td><td>26</td><td>26</td><td>100.00</td></tr>
+<tr class="s8"><td class="lf">ALWAYS</td><td>192</td><td>16</td><td>14</td><td>87.50</td></tr>
+</table>
+<pre class="code"><br clear=all>
+37                          always @(posedge clk or negedge rst_n) begin
+38         1/1                  if (!rst_n) begin
+39         1/1                      s1_is_special &lt;= 0;
+40         1/1                      s1_special_result &lt;= 0;
+41         2/2                      s1_sign_a &lt;= 0; s1_sign_b &lt;= 0;
+42         2/2                      s1_exp_a &lt;= 0;  s1_exp_b &lt;= 0;
+43         2/2                      s1_mant_a &lt;= 0; s1_mant_b &lt;= 0;
+44                              end else begin
+45                      
+46         1/1                      if (is_nan_a || is_nan_b) begin
+47         1/1                          s1_is_special &lt;= 1'b1;
+48         1/1                          s1_special_result &lt;= quiet_nan;
+49         1/1                      end else if (is_inf_a &amp;&amp; is_inf_b &amp;&amp; (sign_a != sign_b)) begin
+50         1/1                          s1_is_special &lt;= 1'b1;
+51         1/1                          s1_special_result &lt;= quiet_nan;
+52         1/1                      end else if (is_inf_a) begin
+53         1/1                          s1_is_special &lt;= 1'b1;
+54         1/1                          s1_special_result &lt;= a;
+55         1/1                      end else if (is_inf_b) begin
+56         1/1                          s1_is_special &lt;= 1'b1;
+57         1/1                          s1_special_result &lt;= b;
+58         1/1                      end else if (is_zero_a &amp;&amp; is_zero_b) begin
+59         1/1                          s1_is_special &lt;= 1'b1;
+60         1/1                          s1_special_result &lt;= {sign_a &amp; sign_b, 63'b0};
+61                                  end else begin
+62         1/1                          s1_is_special &lt;= 1'b0;
+63         1/1                          s1_sign_a &lt;= sign_a;
+64         1/1                          s1_sign_b &lt;= sign_b;
+65         1/1                          s1_exp_a &lt;= (exp_a == 0) ? 11'd1 : exp_a;
+66         1/1                          s1_exp_b &lt;= (exp_b == 0) ? 11'd1 : exp_b;
+67         1/1                          s1_mant_a &lt;= (exp_a == 0) ? {1'b0, frac_a, 3'b000} : {1'b1, frac_a, 3'b000};
+68         1/1                          s1_mant_b &lt;= (exp_b == 0) ? {1'b0, frac_b, 3'b000} : {1'b1, frac_b, 3'b000};
+69                                  end
+70                              end
+71                          end
+72                      
+73                          // ==========================================
+74                          // STAGE 2: Align exponents and compute Math
+75                          // ==========================================
+76                          reg s2_is_special;
+77                          reg [63:0] s2_special_result;
+78                          
+79                          reg s2_sign_res;
+80                          reg [10:0] s2_exp_res;
+81                          reg [56:0] s2_mant_res;
+82                      
+83                          always @(posedge clk or negedge rst_n) begin
+84         1/1                  if (!rst_n) begin
+85         1/1                      s2_is_special &lt;= 0;
+86         1/1                      s2_special_result &lt;= 0;
+87         1/1                      s2_sign_res &lt;= 0;
+88         1/1                      s2_exp_res &lt;= 0;
+89         1/1                      s2_mant_res &lt;= 0;
+90         1/1                  end else if (s1_is_special) begin
+91         1/1                      s2_is_special &lt;= 1'b1;
+92         1/1                      s2_special_result &lt;= s1_special_result;
+93                              end else begin
+94         1/1                      s2_is_special &lt;= 1'b0;
+95                                  begin : add_logic
+96                                      reg [56:0] m_a, m_b;
+97                                      integer shift;
+98                                      
+99         1/1                          m_a = s1_mant_a;
+100        1/1                          m_b = s1_mant_b;
+101                                     
+102        1/1                          if (s1_exp_a &gt; s1_exp_b) begin
+103        1/1                              shift = s1_exp_a - s1_exp_b;
+104        1/1                              if (shift &gt;= 56) begin
+105        1/1                                  m_b = {56'b0, m_b != 0};
+106                                         end else begin
+107        1/1                                  m_b = (m_b &gt;&gt; shift) | {56'b0, (m_b &amp; ((64'b1 &lt;&lt; shift) - 1)) != 0};
+108                                         end
+109        1/1                              s2_exp_res &lt;= s1_exp_a;
+110                                     end else begin
+111        1/1                              shift = s1_exp_b - s1_exp_a;
+112        1/1                              if (shift &gt;= 56) begin
+113        1/1                                  m_a = {56'b0, m_a != 0};
+114                                         end else begin
+115        1/1                                  m_a = (m_a &gt;&gt; shift) | {56'b0, (m_a &amp; ((64'b1 &lt;&lt; shift) - 1)) != 0};
+116                                         end
+117        1/1                              s2_exp_res &lt;= s1_exp_b;
+118                                     end
+119                     
+120        1/1                          if (s1_sign_a == s1_sign_b) begin
+121        1/1                              s2_mant_res &lt;= m_a + m_b;
+122        1/1                              s2_sign_res &lt;= s1_sign_a;
+123                                     end else begin
+124        1/1                              if (m_a &gt;= m_b) begin
+125        1/1                                  s2_mant_res &lt;= m_a - m_b;
+126        1/1                                  s2_sign_res &lt;= s1_sign_a;
+127                                         end else begin
+128        1/1                                  s2_mant_res &lt;= m_b - m_a;
+129        1/1                                  s2_sign_res &lt;= s1_sign_b;
+130                                         end
+131                                     end
+132                                 end
+133                             end
+134                         end
+135                     
+136                         // ==========================================
+137                         // STAGE 3: Normalization
+138                         // ==========================================
+139                         reg s3_is_special;
+140                         reg [63:0] s3_special_result;
+141                         
+142                         reg s3_sign_res;
+143                         reg [10:0] s3_exp_res;
+144                         reg [56:0] s3_mant_res;
+145                     
+146                         always @(posedge clk or negedge rst_n) begin
+147        1/1                  if (!rst_n) begin
+148        1/1                      s3_is_special &lt;= 0;
+149        1/1                      s3_special_result &lt;= 0;
+150        1/1                      s3_sign_res &lt;= 0;
+151        1/1                      s3_exp_res &lt;= 0;
+152        1/1                      s3_mant_res &lt;= 0;
+153        1/1                  end else if (s2_is_special) begin
+154        1/1                      s3_is_special &lt;= 1'b1;
+155        1/1                      s3_special_result &lt;= s2_special_result;
+156                             end else begin
+157        1/1                      s3_is_special &lt;= 1'b0;
+158        1/1                      s3_sign_res &lt;= s2_sign_res;
+159                                 begin : norm_logic
+160                                     reg [56:0] m_res;
+161                                     reg [10:0] e_res;
+162        1/1                          m_res = s2_mant_res;
+163        1/1                          e_res = s2_exp_res;
+164                                     
+165        1/1                          if (m_res == 0) begin
+166        1/1                              e_res = 0;
+167        1/1                              s3_sign_res &lt;= 0;
+168                                     end else begin
+169        1/1                              if (m_res[56]) begin // Overflow from add
+170        1/1                                  m_res = (m_res &gt;&gt; 1) | {56'b0, m_res[0] | m_res[1]};
+171        1/1                                  e_res = e_res + 1;
+172                                         end else begin
+173        1/1                                  while ((m_res[55] == 0) &amp;&amp; (e_res &gt; 1)) begin
+174        1/1                                      m_res = m_res &lt;&lt; 1;
+175        1/1                                      e_res = e_res - 1;
+176                                             end
+                   <font color = "red">==>  WHILE_FALSE</font>
+177        1/1                                  if (e_res == 1 &amp;&amp; m_res[55] == 0) begin
+178        1/1                                      e_res = 0; // Drop into subnormal
+179                                             end
+                        MISSING_ELSE
+180                                         end
+181                                     end
+182        1/1                          s3_mant_res &lt;= m_res;
+183        1/1                          s3_exp_res &lt;= e_res;
+184                                 end
+185                             end
+186                         end
+187                     
+188                         // ==========================================
+189                         // STAGE 4: Rounding and Packing
+190                         // ==========================================
+191                         always @(posedge clk or negedge rst_n) begin
+192        1/1                  if (!rst_n) begin
+193        1/1                      result &lt;= 0;
+194        1/1                  end else if (s3_is_special) begin
+195        1/1                      result &lt;= s3_special_result;
+196                             end else begin
+197                                 begin : pack_logic
+198                                     reg [56:0] m_res;
+199                                     reg [10:0] e_res;
+200                                     reg round_bit;
+201                                     
+202        1/1                          m_res = s3_mant_res;
+203        1/1                          e_res = s3_exp_res;
+204                                     
+205        1/1                          if (m_res != 0) begin
+206        1/1                              round_bit = m_res[2] &amp; (m_res[1] | m_res[0] | m_res[3]);
+207        1/1                              if (round_bit) begin
+208        1/1                                  m_res = m_res + 8;
+209        1/1                                  if (m_res[56]) begin 
+210        <font color = "red">0/1     ==>                              m_res = m_res &gt;&gt; 1;</font>
+211        <font color = "red">0/1     ==>                              e_res = e_res + 1;</font>
+212                                             end
+                        MISSING_ELSE
+213                                         end
+                        MISSING_ELSE
+214                                     end
+                        MISSING_ELSE
+215                                     
+216        1/1                          if (e_res &gt;= 2047) begin
+217        1/1                              result &lt;= {s3_sign_res, 11'h7FF, 52'b0};
+218                                     end else begin
+219        1/1                              result &lt;= {s3_sign_res, e_res[10:0], m_res[54:3]};
+</pre>
+<hr>
+<a name="Cond"></a>
+Cond Coverage for Module : <a href="mod1.html" >fp_add</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s9"><td class="lf">Conditions</td><td>102</td><td>101</td><td>99.02</td></tr>
+<tr class="s9"><td class="lf">Logical</td><td>102</td><td>101</td><td>99.02</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       30
+ EXPRESSION ((exp_a == 11'h7ff) &amp;&amp; (frac_a != 0))
+             ---------1--------    ------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       30
+ SUB-EXPRESSION (exp_a == 11'h7ff)
+                ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       30
+ SUB-EXPRESSION (frac_a != 0)
+                ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       31
+ EXPRESSION ((exp_b == 11'h7ff) &amp;&amp; (frac_b != 0))
+             ---------1--------    ------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       31
+ SUB-EXPRESSION (exp_b == 11'h7ff)
+                ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       31
+ SUB-EXPRESSION (frac_b != 0)
+                ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       32
+ EXPRESSION ((exp_a == 11'h7ff) &amp;&amp; (frac_a == 0))
+             ---------1--------    ------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       32
+ SUB-EXPRESSION (exp_a == 11'h7ff)
+                ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       32
+ SUB-EXPRESSION (frac_a == 0)
+                ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       33
+ EXPRESSION ((exp_b == 11'h7ff) &amp;&amp; (frac_b == 0))
+             ---------1--------    ------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       33
+ SUB-EXPRESSION (exp_b == 11'h7ff)
+                ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       33
+ SUB-EXPRESSION (frac_b == 0)
+                ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       34
+ EXPRESSION ((exp_a == 11'b0) &amp;&amp; (frac_a == 0))
+             --------1-------    ------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       34
+ SUB-EXPRESSION (exp_a == 11'b0)
+                --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       34
+ SUB-EXPRESSION (frac_a == 0)
+                ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       35
+ EXPRESSION ((exp_b == 11'b0) &amp;&amp; (frac_b == 0))
+             --------1-------    ------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       35
+ SUB-EXPRESSION (exp_b == 11'b0)
+                --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       35
+ SUB-EXPRESSION (frac_b == 0)
+                ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       46
+ EXPRESSION (is_nan_a || is_nan_b)
+             ----1---    ----2---
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       49
+ EXPRESSION (is_inf_a &amp;&amp; is_inf_b &amp;&amp; (sign_a != sign_b))
+             ----1---    ----2---    ---------3--------
+</pre>
+<table class="noborder">
+<col span="3" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       49
+ SUB-EXPRESSION (sign_a != sign_b)
+                ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       58
+ EXPRESSION (is_zero_a &amp;&amp; is_zero_b)
+             ----1----    ----2----
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       60
+ SUB-EXPRESSION (sign_a &amp; sign_b)
+                 ---1--   ---2--
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       65
+ EXPRESSION ((exp_a == 11'b0) ? 11'b1 : exp_a)
+             --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       65
+ SUB-EXPRESSION (exp_a == 11'b0)
+                --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       66
+ EXPRESSION ((exp_b == 11'b0) ? 11'b1 : exp_b)
+             --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       66
+ SUB-EXPRESSION (exp_b == 11'b0)
+                --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       67
+ EXPRESSION ((exp_a == 11'b0) ? ({1'b0, frac_a, 3'b0}) : ({1'b1, frac_a, 3'b0}))
+             --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       67
+ SUB-EXPRESSION (exp_a == 11'b0)
+                --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       68
+ EXPRESSION ((exp_b == 11'b0) ? ({1'b0, frac_b, 3'b0}) : ({1'b1, frac_b, 3'b0}))
+             --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       68
+ SUB-EXPRESSION (exp_b == 11'b0)
+                --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       105
+ SUB-EXPRESSION (m_b != 0)
+                -----1----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       113
+ SUB-EXPRESSION (m_a != 0)
+                -----1----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       120
+ EXPRESSION (s1_sign_a == s1_sign_b)
+            ------------1-----------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       165
+ EXPRESSION (m_res == 0)
+            ------1-----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       173
+ EXPRESSION ((m_res[55] == 1'b0) &amp;&amp; (e_res &gt; 11'b1))
+             ---------1---------    -------2-------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       173
+ SUB-EXPRESSION (m_res[55] == 1'b0)
+                ---------1---------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       177
+ EXPRESSION ((e_res == 11'b1) &amp;&amp; (m_res[55] == 1'b0))
+             --------1-------    ---------2---------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       177
+ SUB-EXPRESSION (e_res == 11'b1)
+                --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       177
+ SUB-EXPRESSION (m_res[55] == 1'b0)
+                ---------1---------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       205
+ EXPRESSION (m_res != 0)
+            ------1-----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       206
+ EXPRESSION (m_res[2] &amp; (m_res[1] | m_res[0] | m_res[3]))
+             ----1---   ----------------2---------------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       206
+ SUB-EXPRESSION (m_res[1] | m_res[0] | m_res[3])
+                 ----1---   ----2---   ----3---
+</pre>
+<table class="noborder">
+<col span="3" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod1.html" >fp_add</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s7">
+<td>Totals</td>
+<td class="rt">36</td>
+<td class="rt">28</td>
+<td class="rt">77.78 </td>
+</tr><tr class="s7">
+<td>Total Bits</td>
+<td class="rt">1726</td>
+<td class="rt">1273</td>
+<td class="rt">73.75 </td>
+</tr><tr class="s7">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">863</td>
+<td class="rt">637</td>
+<td class="rt">73.81 </td>
+</tr><tr class="s7">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">863</td>
+<td class="rt">636</td>
+<td class="rt">73.70 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s8">
+<td>Ports</td>
+<td class="rt">5</td>
+<td class="rt">4</td>
+<td class="rt">80.00 </td>
+</tr><tr class="s9">
+<td>Port Bits</td>
+<td class="rt">388</td>
+<td class="rt">387</td>
+<td class="rt">99.74 </td>
+</tr><tr class="s10">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">194</td>
+<td class="rt">194</td>
+<td class="rt">100.00</td>
+</tr><tr class="s9">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">194</td>
+<td class="rt">193</td>
+<td class="rt">99.48 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s7">
+<td>Signals</td>
+<td class="rt">31</td>
+<td class="rt">24</td>
+<td class="rt">77.42 </td>
+</tr><tr class="s6">
+<td>Signal Bits</td>
+<td class="rt">1338</td>
+<td class="rt">886</td>
+<td class="rt">66.22 </td>
+</tr><tr class="s6">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">669</td>
+<td class="rt">443</td>
+<td class="rt">66.22 </td>
+</tr><tr class="s6">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">669</td>
+<td class="rt">443</td>
+<td class="rt">66.22 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>rst_n</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>a[63:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>b[63:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>result[63:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>quiet_nan[63:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s1_is_special</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_special_result[50:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s1_special_result[63:51]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_sign_a</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_sign_b</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_exp_a[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_exp_b[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_mant_a[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s1_mant_a[55:3]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_mant_a[56]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s1_mant_b[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s1_mant_b[55:3]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_mant_b[56]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>sign_a</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>exp_a[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>frac_a[51:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>sign_b</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>exp_b[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>frac_b[51:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>is_nan_a</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>is_nan_b</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>is_inf_a</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>is_inf_b</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>is_zero_a</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>is_zero_b</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s2_is_special</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s2_special_result[50:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s2_special_result[63:51]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s2_sign_res</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s2_exp_res[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s2_mant_res[56:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s3_is_special</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s3_special_result[50:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s3_special_result[63:51]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s3_sign_res</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s3_exp_res[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s3_mant_res[55:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s3_mant_res[56]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr></table><br clear=all>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a href="mod1.html" >fp_add</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s9">
+<td>Branches</td>
+<td></td>
+<td class="rt">37</td>
+<td class="rt">36</td>
+<td class="rt">97.30 </td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">38</td>
+<td class="rt">14</td>
+<td class="rt">14</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">84</td>
+<td class="rt">9</td>
+<td class="rt">9</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">147</td>
+<td class="rt">6</td>
+<td class="rt">6</td>
+<td class="rt">100.00</td>
+</tr><tr class="s8">
+<td>IF</td>
+<td class="rt">192</td>
+<td class="rt">8</td>
+<td class="rt">7</td>
+<td class="rt">87.50 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+38                 if (!rst_n) begin
+                   <font color = "green">-1-</font>  
+39                     s1_is_special <= 0;
+           <font color = "green">            ==></font>
+40                     s1_special_result <= 0;
+41                     s1_sign_a <= 0; s1_sign_b <= 0;
+42                     s1_exp_a <= 0;  s1_exp_b <= 0;
+43                     s1_mant_a <= 0; s1_mant_b <= 0;
+44                 end else begin
+45         
+46                     if (is_nan_a || is_nan_b) begin
+                       <font color = "green">-2-</font>  
+47                         s1_is_special <= 1'b1;
+           <font color = "green">                ==></font>
+48                         s1_special_result <= quiet_nan;
+49                     end else if (is_inf_a && is_inf_b && (sign_a != sign_b)) begin
+                                <font color = "green">-3-</font>  
+50                         s1_is_special <= 1'b1;
+           <font color = "green">                ==></font>
+51                         s1_special_result <= quiet_nan;
+52                     end else if (is_inf_a) begin
+                                <font color = "green">-4-</font>  
+53                         s1_is_special <= 1'b1;
+           <font color = "green">                ==></font>
+54                         s1_special_result <= a;
+55                     end else if (is_inf_b) begin
+                                <font color = "green">-5-</font>  
+56                         s1_is_special <= 1'b1;
+           <font color = "green">                ==></font>
+57                         s1_special_result <= b;
+58                     end else if (is_zero_a && is_zero_b) begin
+                                <font color = "green">-6-</font>  
+59                         s1_is_special <= 1'b1;
+           <font color = "green">                ==></font>
+60                         s1_special_result <= {sign_a & sign_b, 63'b0};
+61                     end else begin
+62                         s1_is_special <= 1'b0;
+63                         s1_sign_a <= sign_a;
+64                         s1_sign_b <= sign_b;
+65                         s1_exp_a <= (exp_a == 0) ? 11'd1 : exp_a;
+                                                    <font color = "green">-7-</font>  
+                                                    <font color = "green">==></font>  
+                                                    <font color = "green">==></font>  
+66                         s1_exp_b <= (exp_b == 0) ? 11'd1 : exp_b;
+                                                    <font color = "green">-8-</font>  
+                                                    <font color = "green">==></font>  
+                                                    <font color = "green">==></font>  
+67                         s1_mant_a <= (exp_a == 0) ? {1'b0, frac_a, 3'b000} : {1'b1, frac_a, 3'b000};
+                                                     <font color = "green">-9-</font>  
+                                                     <font color = "green">==></font>  
+                                                     <font color = "green">==></font>  
+68                         s1_mant_b <= (exp_b == 0) ? {1'b0, frac_b, 3'b000} : {1'b1, frac_b, 3'b000};
+                                                     <font color = "green">-10-</font>  
+                                                     <font color = "green">==></font>  
+                                                     <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>-7-</th><th nowrap width=80>-8-</th><th nowrap width=80>-9-</th><th nowrap width=80>-10-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+84                 if (!rst_n) begin
+                   <font color = "green">-1-</font>  
+85                     s2_is_special <= 0;
+           <font color = "green">            ==></font>
+86                     s2_special_result <= 0;
+87                     s2_sign_res <= 0;
+88                     s2_exp_res <= 0;
+89                     s2_mant_res <= 0;
+90                 end else if (s1_is_special) begin
+                            <font color = "green">-2-</font>  
+91                     s2_is_special <= 1'b1;
+           <font color = "green">            ==></font>
+92                     s2_special_result <= s1_special_result;
+93                 end else begin
+94                     s2_is_special <= 1'b0;
+95                     begin : add_logic
+96                         reg [56:0] m_a, m_b;
+97                         integer shift;
+98                         
+99                         m_a = s1_mant_a;
+100                        m_b = s1_mant_b;
+101                        
+102                        if (s1_exp_a > s1_exp_b) begin
+                           <font color = "green">-3-</font>  
+103                            shift = s1_exp_a - s1_exp_b;
+104                            if (shift >= 56) begin
+                               <font color = "green">-4-</font>      
+105                                m_b = {56'b0, m_b != 0};
+           <font color = "green">                        ==></font>
+106                            end else begin
+107                                m_b = (m_b >> shift) | {56'b0, (m_b & ((64'b1 << shift) - 1)) != 0};
+           <font color = "green">                        ==></font>
+108                            end
+109                            s2_exp_res <= s1_exp_a;
+110                        end else begin
+111                            shift = s1_exp_b - s1_exp_a;
+112                            if (shift >= 56) begin
+                               <font color = "green">-5-</font>      
+113                                m_a = {56'b0, m_a != 0};
+           <font color = "green">                        ==></font>
+114                            end else begin
+115                                m_a = (m_a >> shift) | {56'b0, (m_a & ((64'b1 << shift) - 1)) != 0};
+           <font color = "green">                        ==></font>
+116                            end
+117                            s2_exp_res <= s1_exp_b;
+118                        end
+119        
+120                        if (s1_sign_a == s1_sign_b) begin
+                           <font color = "green">-6-</font>  
+121                            s2_mant_res <= m_a + m_b;
+           <font color = "green">                    ==></font>
+122                            s2_sign_res <= s1_sign_a;
+123                        end else begin
+124                            if (m_a >= m_b) begin
+                               <font color = "green">-7-</font>  
+125                                s2_mant_res <= m_a - m_b;
+           <font color = "green">                        ==></font>
+126                                s2_sign_res <= s1_sign_a;
+127                            end else begin
+128                                s2_mant_res <= m_b - m_a;
+           <font color = "green">                        ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>-7-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+147                if (!rst_n) begin
+                   <font color = "green">-1-</font>  
+148                    s3_is_special <= 0;
+           <font color = "green">            ==></font>
+149                    s3_special_result <= 0;
+150                    s3_sign_res <= 0;
+151                    s3_exp_res <= 0;
+152                    s3_mant_res <= 0;
+153                end else if (s2_is_special) begin
+                            <font color = "green">-2-</font>  
+154                    s3_is_special <= 1'b1;
+           <font color = "green">            ==></font>
+155                    s3_special_result <= s2_special_result;
+156                end else begin
+157                    s3_is_special <= 1'b0;
+158                    s3_sign_res <= s2_sign_res;
+159                    begin : norm_logic
+160                        reg [56:0] m_res;
+161                        reg [10:0] e_res;
+162                        m_res = s2_mant_res;
+163                        e_res = s2_exp_res;
+164                        
+165                        if (m_res == 0) begin
+                           <font color = "green">-3-</font>  
+166                            e_res = 0;
+           <font color = "green">                    ==></font>
+167                            s3_sign_res <= 0;
+168                        end else begin
+169                            if (m_res[56]) begin // Overflow from add
+                               <font color = "green">-4-</font>  
+170                                m_res = (m_res >> 1) | {56'b0, m_res[0] | m_res[1]};
+           <font color = "green">                        ==></font>
+171                                e_res = e_res + 1;
+172                            end else begin
+173                                while ((m_res[55] == 0) && (e_res > 1)) begin
+174                                    m_res = m_res << 1;
+175                                    e_res = e_res - 1;
+176                                end
+177                                if (e_res == 1 && m_res[55] == 0) begin
+                                   <font color = "green">-5-</font>  
+178                                    e_res = 0; // Drop into subnormal
+           <font color = "green">                            ==></font>
+179                                end
+                                   MISSING_ELSE
+           <font color = "green">                        ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+192                if (!rst_n) begin
+                   <font color = "green">-1-</font>  
+193                    result <= 0;
+           <font color = "green">            ==></font>
+194                end else if (s3_is_special) begin
+                            <font color = "green">-2-</font>  
+195                    result <= s3_special_result;
+           <font color = "green">            ==></font>
+196                end else begin
+197                    begin : pack_logic
+198                        reg [56:0] m_res;
+199                        reg [10:0] e_res;
+200                        reg round_bit;
+201                        
+202                        m_res = s3_mant_res;
+203                        e_res = s3_exp_res;
+204                        
+205                        if (m_res != 0) begin
+                           <font color = "green">-3-</font>  
+206                            round_bit = m_res[2] & (m_res[1] | m_res[0] | m_res[3]);
+207                            if (round_bit) begin
+                               <font color = "green">-4-</font>  
+208                                m_res = m_res + 8;
+209                                if (m_res[56]) begin 
+                                   <font color = "red">-5-</font>  
+210                                    m_res = m_res >> 1;
+           <font color = "red">                            ==></font>
+211                                    e_res = e_res + 1;
+212                                end
+                                   MISSING_ELSE
+           <font color = "green">                        ==></font>
+213                            end
+                               MISSING_ELSE
+           <font color = "green">                    ==></font>
+214                        end
+                           MISSING_ELSE
+           <font color = "green">                ==></font>
+215                        
+216                        if (e_res >= 2047) begin
+                           <font color = "green">-6-</font>  
+217                            result <= {s3_sign_res, 11'h7FF, 52'b0};
+           <font color = "green">                    ==></font>
+218                        end else begin
+219                            result <= {s3_sign_res, e_res[10:0], m_res[54:3]};
+           <font color = "green">                    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+<div name='inst_tag_1'>
+<a name="inst_tag_1_Line"></a>
+<b>Line Coverage for Instance : <a href="mod1.html#inst_tag_1" >tb_fpu_sv.dut.adder</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s9"><td class="lf">TOTAL</td><td></td><td>104</td><td>102</td><td>98.08</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>38</td><td>31</td><td>31</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>84</td><td>31</td><td>31</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>147</td><td>26</td><td>26</td><td>100.00</td></tr>
+<tr class="s8"><td class="lf">ALWAYS</td><td>192</td><td>16</td><td>14</td><td>87.50</td></tr>
+</table>
+<pre class="code"><br clear=all>
+37                          always @(posedge clk or negedge rst_n) begin
+38         1/1                  if (!rst_n) begin
+39         1/1                      s1_is_special &lt;= 0;
+40         1/1                      s1_special_result &lt;= 0;
+41         2/2                      s1_sign_a &lt;= 0; s1_sign_b &lt;= 0;
+42         2/2                      s1_exp_a &lt;= 0;  s1_exp_b &lt;= 0;
+43         2/2                      s1_mant_a &lt;= 0; s1_mant_b &lt;= 0;
+44                              end else begin
+45                      
+46         1/1                      if (is_nan_a || is_nan_b) begin
+47         1/1                          s1_is_special &lt;= 1'b1;
+48         1/1                          s1_special_result &lt;= quiet_nan;
+49         1/1                      end else if (is_inf_a &amp;&amp; is_inf_b &amp;&amp; (sign_a != sign_b)) begin
+50         1/1                          s1_is_special &lt;= 1'b1;
+51         1/1                          s1_special_result &lt;= quiet_nan;
+52         1/1                      end else if (is_inf_a) begin
+53         1/1                          s1_is_special &lt;= 1'b1;
+54         1/1                          s1_special_result &lt;= a;
+55         1/1                      end else if (is_inf_b) begin
+56         1/1                          s1_is_special &lt;= 1'b1;
+57         1/1                          s1_special_result &lt;= b;
+58         1/1                      end else if (is_zero_a &amp;&amp; is_zero_b) begin
+59         1/1                          s1_is_special &lt;= 1'b1;
+60         1/1                          s1_special_result &lt;= {sign_a &amp; sign_b, 63'b0};
+61                                  end else begin
+62         1/1                          s1_is_special &lt;= 1'b0;
+63         1/1                          s1_sign_a &lt;= sign_a;
+64         1/1                          s1_sign_b &lt;= sign_b;
+65         1/1                          s1_exp_a &lt;= (exp_a == 0) ? 11'd1 : exp_a;
+66         1/1                          s1_exp_b &lt;= (exp_b == 0) ? 11'd1 : exp_b;
+67         1/1                          s1_mant_a &lt;= (exp_a == 0) ? {1'b0, frac_a, 3'b000} : {1'b1, frac_a, 3'b000};
+68         1/1                          s1_mant_b &lt;= (exp_b == 0) ? {1'b0, frac_b, 3'b000} : {1'b1, frac_b, 3'b000};
+69                                  end
+70                              end
+71                          end
+72                      
+73                          // ==========================================
+74                          // STAGE 2: Align exponents and compute Math
+75                          // ==========================================
+76                          reg s2_is_special;
+77                          reg [63:0] s2_special_result;
+78                          
+79                          reg s2_sign_res;
+80                          reg [10:0] s2_exp_res;
+81                          reg [56:0] s2_mant_res;
+82                      
+83                          always @(posedge clk or negedge rst_n) begin
+84         1/1                  if (!rst_n) begin
+85         1/1                      s2_is_special &lt;= 0;
+86         1/1                      s2_special_result &lt;= 0;
+87         1/1                      s2_sign_res &lt;= 0;
+88         1/1                      s2_exp_res &lt;= 0;
+89         1/1                      s2_mant_res &lt;= 0;
+90         1/1                  end else if (s1_is_special) begin
+91         1/1                      s2_is_special &lt;= 1'b1;
+92         1/1                      s2_special_result &lt;= s1_special_result;
+93                              end else begin
+94         1/1                      s2_is_special &lt;= 1'b0;
+95                                  begin : add_logic
+96                                      reg [56:0] m_a, m_b;
+97                                      integer shift;
+98                                      
+99         1/1                          m_a = s1_mant_a;
+100        1/1                          m_b = s1_mant_b;
+101                                     
+102        1/1                          if (s1_exp_a &gt; s1_exp_b) begin
+103        1/1                              shift = s1_exp_a - s1_exp_b;
+104        1/1                              if (shift &gt;= 56) begin
+105        1/1                                  m_b = {56'b0, m_b != 0};
+106                                         end else begin
+107        1/1                                  m_b = (m_b &gt;&gt; shift) | {56'b0, (m_b &amp; ((64'b1 &lt;&lt; shift) - 1)) != 0};
+108                                         end
+109        1/1                              s2_exp_res &lt;= s1_exp_a;
+110                                     end else begin
+111        1/1                              shift = s1_exp_b - s1_exp_a;
+112        1/1                              if (shift &gt;= 56) begin
+113        1/1                                  m_a = {56'b0, m_a != 0};
+114                                         end else begin
+115        1/1                                  m_a = (m_a &gt;&gt; shift) | {56'b0, (m_a &amp; ((64'b1 &lt;&lt; shift) - 1)) != 0};
+116                                         end
+117        1/1                              s2_exp_res &lt;= s1_exp_b;
+118                                     end
+119                     
+120        1/1                          if (s1_sign_a == s1_sign_b) begin
+121        1/1                              s2_mant_res &lt;= m_a + m_b;
+122        1/1                              s2_sign_res &lt;= s1_sign_a;
+123                                     end else begin
+124        1/1                              if (m_a &gt;= m_b) begin
+125        1/1                                  s2_mant_res &lt;= m_a - m_b;
+126        1/1                                  s2_sign_res &lt;= s1_sign_a;
+127                                         end else begin
+128        1/1                                  s2_mant_res &lt;= m_b - m_a;
+129        1/1                                  s2_sign_res &lt;= s1_sign_b;
+130                                         end
+131                                     end
+132                                 end
+133                             end
+134                         end
+135                     
+136                         // ==========================================
+137                         // STAGE 3: Normalization
+138                         // ==========================================
+139                         reg s3_is_special;
+140                         reg [63:0] s3_special_result;
+141                         
+142                         reg s3_sign_res;
+143                         reg [10:0] s3_exp_res;
+144                         reg [56:0] s3_mant_res;
+145                     
+146                         always @(posedge clk or negedge rst_n) begin
+147        1/1                  if (!rst_n) begin
+148        1/1                      s3_is_special &lt;= 0;
+149        1/1                      s3_special_result &lt;= 0;
+150        1/1                      s3_sign_res &lt;= 0;
+151        1/1                      s3_exp_res &lt;= 0;
+152        1/1                      s3_mant_res &lt;= 0;
+153        1/1                  end else if (s2_is_special) begin
+154        1/1                      s3_is_special &lt;= 1'b1;
+155        1/1                      s3_special_result &lt;= s2_special_result;
+156                             end else begin
+157        1/1                      s3_is_special &lt;= 1'b0;
+158        1/1                      s3_sign_res &lt;= s2_sign_res;
+159                                 begin : norm_logic
+160                                     reg [56:0] m_res;
+161                                     reg [10:0] e_res;
+162        1/1                          m_res = s2_mant_res;
+163        1/1                          e_res = s2_exp_res;
+164                                     
+165        1/1                          if (m_res == 0) begin
+166        1/1                              e_res = 0;
+167        1/1                              s3_sign_res &lt;= 0;
+168                                     end else begin
+169        1/1                              if (m_res[56]) begin // Overflow from add
+170        1/1                                  m_res = (m_res &gt;&gt; 1) | {56'b0, m_res[0] | m_res[1]};
+171        1/1                                  e_res = e_res + 1;
+172                                         end else begin
+173        1/1                                  while ((m_res[55] == 0) &amp;&amp; (e_res &gt; 1)) begin
+174        1/1                                      m_res = m_res &lt;&lt; 1;
+175        1/1                                      e_res = e_res - 1;
+176                                             end
+                   <font color = "red">==>  WHILE_FALSE</font>
+177        1/1                                  if (e_res == 1 &amp;&amp; m_res[55] == 0) begin
+178        1/1                                      e_res = 0; // Drop into subnormal
+179                                             end
+                        MISSING_ELSE
+180                                         end
+181                                     end
+182        1/1                          s3_mant_res &lt;= m_res;
+183        1/1                          s3_exp_res &lt;= e_res;
+184                                 end
+185                             end
+186                         end
+187                     
+188                         // ==========================================
+189                         // STAGE 4: Rounding and Packing
+190                         // ==========================================
+191                         always @(posedge clk or negedge rst_n) begin
+192        1/1                  if (!rst_n) begin
+193        1/1                      result &lt;= 0;
+194        1/1                  end else if (s3_is_special) begin
+195        1/1                      result &lt;= s3_special_result;
+196                             end else begin
+197                                 begin : pack_logic
+198                                     reg [56:0] m_res;
+199                                     reg [10:0] e_res;
+200                                     reg round_bit;
+201                                     
+202        1/1                          m_res = s3_mant_res;
+203        1/1                          e_res = s3_exp_res;
+204                                     
+205        1/1                          if (m_res != 0) begin
+206        1/1                              round_bit = m_res[2] &amp; (m_res[1] | m_res[0] | m_res[3]);
+207        1/1                              if (round_bit) begin
+208        1/1                                  m_res = m_res + 8;
+209        1/1                                  if (m_res[56]) begin 
+210        <font color = "red">0/1     ==>                              m_res = m_res &gt;&gt; 1;</font>
+211        <font color = "red">0/1     ==>                              e_res = e_res + 1;</font>
+212                                             end
+                        MISSING_ELSE
+213                                         end
+                        MISSING_ELSE
+214                                     end
+                        MISSING_ELSE
+215                                     
+216        1/1                          if (e_res &gt;= 2047) begin
+217        1/1                              result &lt;= {s3_sign_res, 11'h7FF, 52'b0};
+218                                     end else begin
+219        1/1                              result &lt;= {s3_sign_res, e_res[10:0], m_res[54:3]};
+</pre>
+<hr>
+<a name="inst_tag_1_Cond"></a>
+<b>Cond Coverage for Instance : <a href="mod1.html#inst_tag_1" >tb_fpu_sv.dut.adder</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s9"><td class="lf">Conditions</td><td>102</td><td>101</td><td>99.02</td></tr>
+<tr class="s9"><td class="lf">Logical</td><td>102</td><td>101</td><td>99.02</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       30
+ EXPRESSION ((exp_a == 11'h7ff) &amp;&amp; (frac_a != 0))
+             ---------1--------    ------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       30
+ SUB-EXPRESSION (exp_a == 11'h7ff)
+                ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       30
+ SUB-EXPRESSION (frac_a != 0)
+                ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       31
+ EXPRESSION ((exp_b == 11'h7ff) &amp;&amp; (frac_b != 0))
+             ---------1--------    ------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       31
+ SUB-EXPRESSION (exp_b == 11'h7ff)
+                ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       31
+ SUB-EXPRESSION (frac_b != 0)
+                ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       32
+ EXPRESSION ((exp_a == 11'h7ff) &amp;&amp; (frac_a == 0))
+             ---------1--------    ------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       32
+ SUB-EXPRESSION (exp_a == 11'h7ff)
+                ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       32
+ SUB-EXPRESSION (frac_a == 0)
+                ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       33
+ EXPRESSION ((exp_b == 11'h7ff) &amp;&amp; (frac_b == 0))
+             ---------1--------    ------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       33
+ SUB-EXPRESSION (exp_b == 11'h7ff)
+                ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       33
+ SUB-EXPRESSION (frac_b == 0)
+                ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       34
+ EXPRESSION ((exp_a == 11'b0) &amp;&amp; (frac_a == 0))
+             --------1-------    ------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       34
+ SUB-EXPRESSION (exp_a == 11'b0)
+                --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       34
+ SUB-EXPRESSION (frac_a == 0)
+                ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       35
+ EXPRESSION ((exp_b == 11'b0) &amp;&amp; (frac_b == 0))
+             --------1-------    ------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       35
+ SUB-EXPRESSION (exp_b == 11'b0)
+                --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       35
+ SUB-EXPRESSION (frac_b == 0)
+                ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       46
+ EXPRESSION (is_nan_a || is_nan_b)
+             ----1---    ----2---
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       49
+ EXPRESSION (is_inf_a &amp;&amp; is_inf_b &amp;&amp; (sign_a != sign_b))
+             ----1---    ----2---    ---------3--------
+</pre>
+<table class="noborder">
+<col span="3" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       49
+ SUB-EXPRESSION (sign_a != sign_b)
+                ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       58
+ EXPRESSION (is_zero_a &amp;&amp; is_zero_b)
+             ----1----    ----2----
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       60
+ SUB-EXPRESSION (sign_a &amp; sign_b)
+                 ---1--   ---2--
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       65
+ EXPRESSION ((exp_a == 11'b0) ? 11'b1 : exp_a)
+             --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       65
+ SUB-EXPRESSION (exp_a == 11'b0)
+                --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       66
+ EXPRESSION ((exp_b == 11'b0) ? 11'b1 : exp_b)
+             --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       66
+ SUB-EXPRESSION (exp_b == 11'b0)
+                --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       67
+ EXPRESSION ((exp_a == 11'b0) ? ({1'b0, frac_a, 3'b0}) : ({1'b1, frac_a, 3'b0}))
+             --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       67
+ SUB-EXPRESSION (exp_a == 11'b0)
+                --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       68
+ EXPRESSION ((exp_b == 11'b0) ? ({1'b0, frac_b, 3'b0}) : ({1'b1, frac_b, 3'b0}))
+             --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       68
+ SUB-EXPRESSION (exp_b == 11'b0)
+                --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       105
+ SUB-EXPRESSION (m_b != 0)
+                -----1----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       113
+ SUB-EXPRESSION (m_a != 0)
+                -----1----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       120
+ EXPRESSION (s1_sign_a == s1_sign_b)
+            ------------1-----------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       165
+ EXPRESSION (m_res == 0)
+            ------1-----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       173
+ EXPRESSION ((m_res[55] == 1'b0) &amp;&amp; (e_res &gt; 11'b1))
+             ---------1---------    -------2-------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       173
+ SUB-EXPRESSION (m_res[55] == 1'b0)
+                ---------1---------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       177
+ EXPRESSION ((e_res == 11'b1) &amp;&amp; (m_res[55] == 1'b0))
+             --------1-------    ---------2---------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       177
+ SUB-EXPRESSION (e_res == 11'b1)
+                --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       177
+ SUB-EXPRESSION (m_res[55] == 1'b0)
+                ---------1---------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       205
+ EXPRESSION (m_res != 0)
+            ------1-----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       206
+ EXPRESSION (m_res[2] &amp; (m_res[1] | m_res[0] | m_res[3]))
+             ----1---   ----------------2---------------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       206
+ SUB-EXPRESSION (m_res[1] | m_res[0] | m_res[3])
+                 ----1---   ----2---   ----3---
+</pre>
+<table class="noborder">
+<col span="3" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="inst_tag_1_Toggle"></a>
+<b>Toggle Coverage for Instance : <a href="mod1.html#inst_tag_1" >tb_fpu_sv.dut.adder</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s7">
+<td>Totals</td>
+<td class="rt">36</td>
+<td class="rt">28</td>
+<td class="rt">77.78 </td>
+</tr><tr class="s7">
+<td>Total Bits</td>
+<td class="rt">1726</td>
+<td class="rt">1273</td>
+<td class="rt">73.75 </td>
+</tr><tr class="s7">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">863</td>
+<td class="rt">637</td>
+<td class="rt">73.81 </td>
+</tr><tr class="s7">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">863</td>
+<td class="rt">636</td>
+<td class="rt">73.70 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s8">
+<td>Ports</td>
+<td class="rt">5</td>
+<td class="rt">4</td>
+<td class="rt">80.00 </td>
+</tr><tr class="s9">
+<td>Port Bits</td>
+<td class="rt">388</td>
+<td class="rt">387</td>
+<td class="rt">99.74 </td>
+</tr><tr class="s10">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">194</td>
+<td class="rt">194</td>
+<td class="rt">100.00</td>
+</tr><tr class="s9">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">194</td>
+<td class="rt">193</td>
+<td class="rt">99.48 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s7">
+<td>Signals</td>
+<td class="rt">31</td>
+<td class="rt">24</td>
+<td class="rt">77.42 </td>
+</tr><tr class="s6">
+<td>Signal Bits</td>
+<td class="rt">1338</td>
+<td class="rt">886</td>
+<td class="rt">66.22 </td>
+</tr><tr class="s6">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">669</td>
+<td class="rt">443</td>
+<td class="rt">66.22 </td>
+</tr><tr class="s6">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">669</td>
+<td class="rt">443</td>
+<td class="rt">66.22 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>rst_n</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>a[63:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>b[63:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>result[63:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>quiet_nan[63:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s1_is_special</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_special_result[50:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s1_special_result[63:51]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_sign_a</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_sign_b</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_exp_a[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_exp_b[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_mant_a[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s1_mant_a[55:3]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_mant_a[56]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s1_mant_b[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s1_mant_b[55:3]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_mant_b[56]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>sign_a</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>exp_a[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>frac_a[51:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>sign_b</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>exp_b[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>frac_b[51:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>is_nan_a</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>is_nan_b</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>is_inf_a</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>is_inf_b</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>is_zero_a</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>is_zero_b</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s2_is_special</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s2_special_result[50:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s2_special_result[63:51]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s2_sign_res</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s2_exp_res[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s2_mant_res[56:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s3_is_special</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s3_special_result[50:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s3_special_result[63:51]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s3_sign_res</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s3_exp_res[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s3_mant_res[55:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s3_mant_res[56]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr></table><br clear=all>
+<hr>
+<a name="inst_tag_1_Branch"></a>
+<b>Branch Coverage for Instance : <a href="mod1.html#inst_tag_1" >tb_fpu_sv.dut.adder</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s9">
+<td>Branches</td>
+<td></td>
+<td class="rt">37</td>
+<td class="rt">36</td>
+<td class="rt">97.30 </td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">38</td>
+<td class="rt">14</td>
+<td class="rt">14</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">84</td>
+<td class="rt">9</td>
+<td class="rt">9</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">147</td>
+<td class="rt">6</td>
+<td class="rt">6</td>
+<td class="rt">100.00</td>
+</tr><tr class="s8">
+<td>IF</td>
+<td class="rt">192</td>
+<td class="rt">8</td>
+<td class="rt">7</td>
+<td class="rt">87.50 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+38                 if (!rst_n) begin
+                   <font color = "green">-1-</font>  
+39                     s1_is_special <= 0;
+           <font color = "green">            ==></font>
+40                     s1_special_result <= 0;
+41                     s1_sign_a <= 0; s1_sign_b <= 0;
+42                     s1_exp_a <= 0;  s1_exp_b <= 0;
+43                     s1_mant_a <= 0; s1_mant_b <= 0;
+44                 end else begin
+45         
+46                     if (is_nan_a || is_nan_b) begin
+                       <font color = "green">-2-</font>  
+47                         s1_is_special <= 1'b1;
+           <font color = "green">                ==></font>
+48                         s1_special_result <= quiet_nan;
+49                     end else if (is_inf_a && is_inf_b && (sign_a != sign_b)) begin
+                                <font color = "green">-3-</font>  
+50                         s1_is_special <= 1'b1;
+           <font color = "green">                ==></font>
+51                         s1_special_result <= quiet_nan;
+52                     end else if (is_inf_a) begin
+                                <font color = "green">-4-</font>  
+53                         s1_is_special <= 1'b1;
+           <font color = "green">                ==></font>
+54                         s1_special_result <= a;
+55                     end else if (is_inf_b) begin
+                                <font color = "green">-5-</font>  
+56                         s1_is_special <= 1'b1;
+           <font color = "green">                ==></font>
+57                         s1_special_result <= b;
+58                     end else if (is_zero_a && is_zero_b) begin
+                                <font color = "green">-6-</font>  
+59                         s1_is_special <= 1'b1;
+           <font color = "green">                ==></font>
+60                         s1_special_result <= {sign_a & sign_b, 63'b0};
+61                     end else begin
+62                         s1_is_special <= 1'b0;
+63                         s1_sign_a <= sign_a;
+64                         s1_sign_b <= sign_b;
+65                         s1_exp_a <= (exp_a == 0) ? 11'd1 : exp_a;
+                                                    <font color = "green">-7-</font>  
+                                                    <font color = "green">==></font>  
+                                                    <font color = "green">==></font>  
+66                         s1_exp_b <= (exp_b == 0) ? 11'd1 : exp_b;
+                                                    <font color = "green">-8-</font>  
+                                                    <font color = "green">==></font>  
+                                                    <font color = "green">==></font>  
+67                         s1_mant_a <= (exp_a == 0) ? {1'b0, frac_a, 3'b000} : {1'b1, frac_a, 3'b000};
+                                                     <font color = "green">-9-</font>  
+                                                     <font color = "green">==></font>  
+                                                     <font color = "green">==></font>  
+68                         s1_mant_b <= (exp_b == 0) ? {1'b0, frac_b, 3'b000} : {1'b1, frac_b, 3'b000};
+                                                     <font color = "green">-10-</font>  
+                                                     <font color = "green">==></font>  
+                                                     <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>-7-</th><th nowrap width=80>-8-</th><th nowrap width=80>-9-</th><th nowrap width=80>-10-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+84                 if (!rst_n) begin
+                   <font color = "green">-1-</font>  
+85                     s2_is_special <= 0;
+           <font color = "green">            ==></font>
+86                     s2_special_result <= 0;
+87                     s2_sign_res <= 0;
+88                     s2_exp_res <= 0;
+89                     s2_mant_res <= 0;
+90                 end else if (s1_is_special) begin
+                            <font color = "green">-2-</font>  
+91                     s2_is_special <= 1'b1;
+           <font color = "green">            ==></font>
+92                     s2_special_result <= s1_special_result;
+93                 end else begin
+94                     s2_is_special <= 1'b0;
+95                     begin : add_logic
+96                         reg [56:0] m_a, m_b;
+97                         integer shift;
+98                         
+99                         m_a = s1_mant_a;
+100                        m_b = s1_mant_b;
+101                        
+102                        if (s1_exp_a > s1_exp_b) begin
+                           <font color = "green">-3-</font>  
+103                            shift = s1_exp_a - s1_exp_b;
+104                            if (shift >= 56) begin
+                               <font color = "green">-4-</font>      
+105                                m_b = {56'b0, m_b != 0};
+           <font color = "green">                        ==></font>
+106                            end else begin
+107                                m_b = (m_b >> shift) | {56'b0, (m_b & ((64'b1 << shift) - 1)) != 0};
+           <font color = "green">                        ==></font>
+108                            end
+109                            s2_exp_res <= s1_exp_a;
+110                        end else begin
+111                            shift = s1_exp_b - s1_exp_a;
+112                            if (shift >= 56) begin
+                               <font color = "green">-5-</font>      
+113                                m_a = {56'b0, m_a != 0};
+           <font color = "green">                        ==></font>
+114                            end else begin
+115                                m_a = (m_a >> shift) | {56'b0, (m_a & ((64'b1 << shift) - 1)) != 0};
+           <font color = "green">                        ==></font>
+116                            end
+117                            s2_exp_res <= s1_exp_b;
+118                        end
+119        
+120                        if (s1_sign_a == s1_sign_b) begin
+                           <font color = "green">-6-</font>  
+121                            s2_mant_res <= m_a + m_b;
+           <font color = "green">                    ==></font>
+122                            s2_sign_res <= s1_sign_a;
+123                        end else begin
+124                            if (m_a >= m_b) begin
+                               <font color = "green">-7-</font>  
+125                                s2_mant_res <= m_a - m_b;
+           <font color = "green">                        ==></font>
+126                                s2_sign_res <= s1_sign_a;
+127                            end else begin
+128                                s2_mant_res <= m_b - m_a;
+           <font color = "green">                        ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>-7-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+147                if (!rst_n) begin
+                   <font color = "green">-1-</font>  
+148                    s3_is_special <= 0;
+           <font color = "green">            ==></font>
+149                    s3_special_result <= 0;
+150                    s3_sign_res <= 0;
+151                    s3_exp_res <= 0;
+152                    s3_mant_res <= 0;
+153                end else if (s2_is_special) begin
+                            <font color = "green">-2-</font>  
+154                    s3_is_special <= 1'b1;
+           <font color = "green">            ==></font>
+155                    s3_special_result <= s2_special_result;
+156                end else begin
+157                    s3_is_special <= 1'b0;
+158                    s3_sign_res <= s2_sign_res;
+159                    begin : norm_logic
+160                        reg [56:0] m_res;
+161                        reg [10:0] e_res;
+162                        m_res = s2_mant_res;
+163                        e_res = s2_exp_res;
+164                        
+165                        if (m_res == 0) begin
+                           <font color = "green">-3-</font>  
+166                            e_res = 0;
+           <font color = "green">                    ==></font>
+167                            s3_sign_res <= 0;
+168                        end else begin
+169                            if (m_res[56]) begin // Overflow from add
+                               <font color = "green">-4-</font>  
+170                                m_res = (m_res >> 1) | {56'b0, m_res[0] | m_res[1]};
+           <font color = "green">                        ==></font>
+171                                e_res = e_res + 1;
+172                            end else begin
+173                                while ((m_res[55] == 0) && (e_res > 1)) begin
+174                                    m_res = m_res << 1;
+175                                    e_res = e_res - 1;
+176                                end
+177                                if (e_res == 1 && m_res[55] == 0) begin
+                                   <font color = "green">-5-</font>  
+178                                    e_res = 0; // Drop into subnormal
+           <font color = "green">                            ==></font>
+179                                end
+                                   MISSING_ELSE
+           <font color = "green">                        ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+192                if (!rst_n) begin
+                   <font color = "green">-1-</font>  
+193                    result <= 0;
+           <font color = "green">            ==></font>
+194                end else if (s3_is_special) begin
+                            <font color = "green">-2-</font>  
+195                    result <= s3_special_result;
+           <font color = "green">            ==></font>
+196                end else begin
+197                    begin : pack_logic
+198                        reg [56:0] m_res;
+199                        reg [10:0] e_res;
+200                        reg round_bit;
+201                        
+202                        m_res = s3_mant_res;
+203                        e_res = s3_exp_res;
+204                        
+205                        if (m_res != 0) begin
+                           <font color = "green">-3-</font>  
+206                            round_bit = m_res[2] & (m_res[1] | m_res[0] | m_res[3]);
+207                            if (round_bit) begin
+                               <font color = "green">-4-</font>  
+208                                m_res = m_res + 8;
+209                                if (m_res[56]) begin 
+                                   <font color = "red">-5-</font>  
+210                                    m_res = m_res >> 1;
+           <font color = "red">                            ==></font>
+211                                    e_res = e_res + 1;
+212                                end
+                                   MISSING_ELSE
+           <font color = "green">                        ==></font>
+213                            end
+                               MISSING_ELSE
+           <font color = "green">                    ==></font>
+214                        end
+                           MISSING_ELSE
+           <font color = "green">                ==></font>
+215                        
+216                        if (e_res >= 2047) begin
+                           <font color = "green">-6-</font>  
+217                            result <= {s3_sign_res, 11'h7FF, 52'b0};
+           <font color = "green">                    ==></font>
+218                        end else begin
+219                            result <= {s3_sign_res, e_res[10:0], m_res[54:3]};
+           <font color = "green">                    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+<div name='inst_tag_2'>
+<a name="inst_tag_2_Line"></a>
+<b>Line Coverage for Instance : <a href="mod1.html#inst_tag_2" >tb_fpu_sv.dut.subtractor.adder</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s9"><td class="lf">TOTAL</td><td></td><td>104</td><td>102</td><td>98.08</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>38</td><td>31</td><td>31</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>84</td><td>31</td><td>31</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>147</td><td>26</td><td>26</td><td>100.00</td></tr>
+<tr class="s8"><td class="lf">ALWAYS</td><td>192</td><td>16</td><td>14</td><td>87.50</td></tr>
+</table>
+<pre class="code"><br clear=all>
+37                          always @(posedge clk or negedge rst_n) begin
+38         1/1                  if (!rst_n) begin
+39         1/1                      s1_is_special &lt;= 0;
+40         1/1                      s1_special_result &lt;= 0;
+41         2/2                      s1_sign_a &lt;= 0; s1_sign_b &lt;= 0;
+42         2/2                      s1_exp_a &lt;= 0;  s1_exp_b &lt;= 0;
+43         2/2                      s1_mant_a &lt;= 0; s1_mant_b &lt;= 0;
+44                              end else begin
+45                      
+46         1/1                      if (is_nan_a || is_nan_b) begin
+47         1/1                          s1_is_special &lt;= 1'b1;
+48         1/1                          s1_special_result &lt;= quiet_nan;
+49         1/1                      end else if (is_inf_a &amp;&amp; is_inf_b &amp;&amp; (sign_a != sign_b)) begin
+50         1/1                          s1_is_special &lt;= 1'b1;
+51         1/1                          s1_special_result &lt;= quiet_nan;
+52         1/1                      end else if (is_inf_a) begin
+53         1/1                          s1_is_special &lt;= 1'b1;
+54         1/1                          s1_special_result &lt;= a;
+55         1/1                      end else if (is_inf_b) begin
+56         1/1                          s1_is_special &lt;= 1'b1;
+57         1/1                          s1_special_result &lt;= b;
+58         1/1                      end else if (is_zero_a &amp;&amp; is_zero_b) begin
+59         1/1                          s1_is_special &lt;= 1'b1;
+60         1/1                          s1_special_result &lt;= {sign_a &amp; sign_b, 63'b0};
+61                                  end else begin
+62         1/1                          s1_is_special &lt;= 1'b0;
+63         1/1                          s1_sign_a &lt;= sign_a;
+64         1/1                          s1_sign_b &lt;= sign_b;
+65         1/1                          s1_exp_a &lt;= (exp_a == 0) ? 11'd1 : exp_a;
+66         1/1                          s1_exp_b &lt;= (exp_b == 0) ? 11'd1 : exp_b;
+67         1/1                          s1_mant_a &lt;= (exp_a == 0) ? {1'b0, frac_a, 3'b000} : {1'b1, frac_a, 3'b000};
+68         1/1                          s1_mant_b &lt;= (exp_b == 0) ? {1'b0, frac_b, 3'b000} : {1'b1, frac_b, 3'b000};
+69                                  end
+70                              end
+71                          end
+72                      
+73                          // ==========================================
+74                          // STAGE 2: Align exponents and compute Math
+75                          // ==========================================
+76                          reg s2_is_special;
+77                          reg [63:0] s2_special_result;
+78                          
+79                          reg s2_sign_res;
+80                          reg [10:0] s2_exp_res;
+81                          reg [56:0] s2_mant_res;
+82                      
+83                          always @(posedge clk or negedge rst_n) begin
+84         1/1                  if (!rst_n) begin
+85         1/1                      s2_is_special &lt;= 0;
+86         1/1                      s2_special_result &lt;= 0;
+87         1/1                      s2_sign_res &lt;= 0;
+88         1/1                      s2_exp_res &lt;= 0;
+89         1/1                      s2_mant_res &lt;= 0;
+90         1/1                  end else if (s1_is_special) begin
+91         1/1                      s2_is_special &lt;= 1'b1;
+92         1/1                      s2_special_result &lt;= s1_special_result;
+93                              end else begin
+94         1/1                      s2_is_special &lt;= 1'b0;
+95                                  begin : add_logic
+96                                      reg [56:0] m_a, m_b;
+97                                      integer shift;
+98                                      
+99         1/1                          m_a = s1_mant_a;
+100        1/1                          m_b = s1_mant_b;
+101                                     
+102        1/1                          if (s1_exp_a &gt; s1_exp_b) begin
+103        1/1                              shift = s1_exp_a - s1_exp_b;
+104        1/1                              if (shift &gt;= 56) begin
+105        1/1                                  m_b = {56'b0, m_b != 0};
+106                                         end else begin
+107        1/1                                  m_b = (m_b &gt;&gt; shift) | {56'b0, (m_b &amp; ((64'b1 &lt;&lt; shift) - 1)) != 0};
+108                                         end
+109        1/1                              s2_exp_res &lt;= s1_exp_a;
+110                                     end else begin
+111        1/1                              shift = s1_exp_b - s1_exp_a;
+112        1/1                              if (shift &gt;= 56) begin
+113        1/1                                  m_a = {56'b0, m_a != 0};
+114                                         end else begin
+115        1/1                                  m_a = (m_a &gt;&gt; shift) | {56'b0, (m_a &amp; ((64'b1 &lt;&lt; shift) - 1)) != 0};
+116                                         end
+117        1/1                              s2_exp_res &lt;= s1_exp_b;
+118                                     end
+119                     
+120        1/1                          if (s1_sign_a == s1_sign_b) begin
+121        1/1                              s2_mant_res &lt;= m_a + m_b;
+122        1/1                              s2_sign_res &lt;= s1_sign_a;
+123                                     end else begin
+124        1/1                              if (m_a &gt;= m_b) begin
+125        1/1                                  s2_mant_res &lt;= m_a - m_b;
+126        1/1                                  s2_sign_res &lt;= s1_sign_a;
+127                                         end else begin
+128        1/1                                  s2_mant_res &lt;= m_b - m_a;
+129        1/1                                  s2_sign_res &lt;= s1_sign_b;
+130                                         end
+131                                     end
+132                                 end
+133                             end
+134                         end
+135                     
+136                         // ==========================================
+137                         // STAGE 3: Normalization
+138                         // ==========================================
+139                         reg s3_is_special;
+140                         reg [63:0] s3_special_result;
+141                         
+142                         reg s3_sign_res;
+143                         reg [10:0] s3_exp_res;
+144                         reg [56:0] s3_mant_res;
+145                     
+146                         always @(posedge clk or negedge rst_n) begin
+147        1/1                  if (!rst_n) begin
+148        1/1                      s3_is_special &lt;= 0;
+149        1/1                      s3_special_result &lt;= 0;
+150        1/1                      s3_sign_res &lt;= 0;
+151        1/1                      s3_exp_res &lt;= 0;
+152        1/1                      s3_mant_res &lt;= 0;
+153        1/1                  end else if (s2_is_special) begin
+154        1/1                      s3_is_special &lt;= 1'b1;
+155        1/1                      s3_special_result &lt;= s2_special_result;
+156                             end else begin
+157        1/1                      s3_is_special &lt;= 1'b0;
+158        1/1                      s3_sign_res &lt;= s2_sign_res;
+159                                 begin : norm_logic
+160                                     reg [56:0] m_res;
+161                                     reg [10:0] e_res;
+162        1/1                          m_res = s2_mant_res;
+163        1/1                          e_res = s2_exp_res;
+164                                     
+165        1/1                          if (m_res == 0) begin
+166        1/1                              e_res = 0;
+167        1/1                              s3_sign_res &lt;= 0;
+168                                     end else begin
+169        1/1                              if (m_res[56]) begin // Overflow from add
+170        1/1                                  m_res = (m_res &gt;&gt; 1) | {56'b0, m_res[0] | m_res[1]};
+171        1/1                                  e_res = e_res + 1;
+172                                         end else begin
+173        1/1                                  while ((m_res[55] == 0) &amp;&amp; (e_res &gt; 1)) begin
+174        1/1                                      m_res = m_res &lt;&lt; 1;
+175        1/1                                      e_res = e_res - 1;
+176                                             end
+                   <font color = "red">==>  WHILE_FALSE</font>
+177        1/1                                  if (e_res == 1 &amp;&amp; m_res[55] == 0) begin
+178        1/1                                      e_res = 0; // Drop into subnormal
+179                                             end
+                        MISSING_ELSE
+180                                         end
+181                                     end
+182        1/1                          s3_mant_res &lt;= m_res;
+183        1/1                          s3_exp_res &lt;= e_res;
+184                                 end
+185                             end
+186                         end
+187                     
+188                         // ==========================================
+189                         // STAGE 4: Rounding and Packing
+190                         // ==========================================
+191                         always @(posedge clk or negedge rst_n) begin
+192        1/1                  if (!rst_n) begin
+193        1/1                      result &lt;= 0;
+194        1/1                  end else if (s3_is_special) begin
+195        1/1                      result &lt;= s3_special_result;
+196                             end else begin
+197                                 begin : pack_logic
+198                                     reg [56:0] m_res;
+199                                     reg [10:0] e_res;
+200                                     reg round_bit;
+201                                     
+202        1/1                          m_res = s3_mant_res;
+203        1/1                          e_res = s3_exp_res;
+204                                     
+205        1/1                          if (m_res != 0) begin
+206        1/1                              round_bit = m_res[2] &amp; (m_res[1] | m_res[0] | m_res[3]);
+207        1/1                              if (round_bit) begin
+208        1/1                                  m_res = m_res + 8;
+209        1/1                                  if (m_res[56]) begin 
+210        <font color = "red">0/1     ==>                              m_res = m_res &gt;&gt; 1;</font>
+211        <font color = "red">0/1     ==>                              e_res = e_res + 1;</font>
+212                                             end
+                        MISSING_ELSE
+213                                         end
+                        MISSING_ELSE
+214                                     end
+                        MISSING_ELSE
+215                                     
+216        1/1                          if (e_res &gt;= 2047) begin
+217        1/1                              result &lt;= {s3_sign_res, 11'h7FF, 52'b0};
+218                                     end else begin
+219        1/1                              result &lt;= {s3_sign_res, e_res[10:0], m_res[54:3]};
+</pre>
+<hr>
+<a name="inst_tag_2_Cond"></a>
+<b>Cond Coverage for Instance : <a href="mod1.html#inst_tag_2" >tb_fpu_sv.dut.subtractor.adder</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s9"><td class="lf">Conditions</td><td>102</td><td>101</td><td>99.02</td></tr>
+<tr class="s9"><td class="lf">Logical</td><td>102</td><td>101</td><td>99.02</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       30
+ EXPRESSION ((exp_a == 11'h7ff) &amp;&amp; (frac_a != 0))
+             ---------1--------    ------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       30
+ SUB-EXPRESSION (exp_a == 11'h7ff)
+                ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       30
+ SUB-EXPRESSION (frac_a != 0)
+                ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       31
+ EXPRESSION ((exp_b == 11'h7ff) &amp;&amp; (frac_b != 0))
+             ---------1--------    ------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       31
+ SUB-EXPRESSION (exp_b == 11'h7ff)
+                ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       31
+ SUB-EXPRESSION (frac_b != 0)
+                ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       32
+ EXPRESSION ((exp_a == 11'h7ff) &amp;&amp; (frac_a == 0))
+             ---------1--------    ------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       32
+ SUB-EXPRESSION (exp_a == 11'h7ff)
+                ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       32
+ SUB-EXPRESSION (frac_a == 0)
+                ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       33
+ EXPRESSION ((exp_b == 11'h7ff) &amp;&amp; (frac_b == 0))
+             ---------1--------    ------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       33
+ SUB-EXPRESSION (exp_b == 11'h7ff)
+                ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       33
+ SUB-EXPRESSION (frac_b == 0)
+                ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       34
+ EXPRESSION ((exp_a == 11'b0) &amp;&amp; (frac_a == 0))
+             --------1-------    ------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       34
+ SUB-EXPRESSION (exp_a == 11'b0)
+                --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       34
+ SUB-EXPRESSION (frac_a == 0)
+                ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       35
+ EXPRESSION ((exp_b == 11'b0) &amp;&amp; (frac_b == 0))
+             --------1-------    ------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       35
+ SUB-EXPRESSION (exp_b == 11'b0)
+                --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       35
+ SUB-EXPRESSION (frac_b == 0)
+                ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       46
+ EXPRESSION (is_nan_a || is_nan_b)
+             ----1---    ----2---
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       49
+ EXPRESSION (is_inf_a &amp;&amp; is_inf_b &amp;&amp; (sign_a != sign_b))
+             ----1---    ----2---    ---------3--------
+</pre>
+<table class="noborder">
+<col span="3" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       49
+ SUB-EXPRESSION (sign_a != sign_b)
+                ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       58
+ EXPRESSION (is_zero_a &amp;&amp; is_zero_b)
+             ----1----    ----2----
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       60
+ SUB-EXPRESSION (sign_a &amp; sign_b)
+                 ---1--   ---2--
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       65
+ EXPRESSION ((exp_a == 11'b0) ? 11'b1 : exp_a)
+             --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       65
+ SUB-EXPRESSION (exp_a == 11'b0)
+                --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       66
+ EXPRESSION ((exp_b == 11'b0) ? 11'b1 : exp_b)
+             --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       66
+ SUB-EXPRESSION (exp_b == 11'b0)
+                --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       67
+ EXPRESSION ((exp_a == 11'b0) ? ({1'b0, frac_a, 3'b0}) : ({1'b1, frac_a, 3'b0}))
+             --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       67
+ SUB-EXPRESSION (exp_a == 11'b0)
+                --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       68
+ EXPRESSION ((exp_b == 11'b0) ? ({1'b0, frac_b, 3'b0}) : ({1'b1, frac_b, 3'b0}))
+             --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       68
+ SUB-EXPRESSION (exp_b == 11'b0)
+                --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       105
+ SUB-EXPRESSION (m_b != 0)
+                -----1----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       113
+ SUB-EXPRESSION (m_a != 0)
+                -----1----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       120
+ EXPRESSION (s1_sign_a == s1_sign_b)
+            ------------1-----------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       165
+ EXPRESSION (m_res == 0)
+            ------1-----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       173
+ EXPRESSION ((m_res[55] == 1'b0) &amp;&amp; (e_res &gt; 11'b1))
+             ---------1---------    -------2-------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       173
+ SUB-EXPRESSION (m_res[55] == 1'b0)
+                ---------1---------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       177
+ EXPRESSION ((e_res == 11'b1) &amp;&amp; (m_res[55] == 1'b0))
+             --------1-------    ---------2---------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       177
+ SUB-EXPRESSION (e_res == 11'b1)
+                --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       177
+ SUB-EXPRESSION (m_res[55] == 1'b0)
+                ---------1---------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       205
+ EXPRESSION (m_res != 0)
+            ------1-----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       206
+ EXPRESSION (m_res[2] &amp; (m_res[1] | m_res[0] | m_res[3]))
+             ----1---   ----------------2---------------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       206
+ SUB-EXPRESSION (m_res[1] | m_res[0] | m_res[3])
+                 ----1---   ----2---   ----3---
+</pre>
+<table class="noborder">
+<col span="3" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="inst_tag_2_Toggle"></a>
+<b>Toggle Coverage for Instance : <a href="mod1.html#inst_tag_2" >tb_fpu_sv.dut.subtractor.adder</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s7">
+<td>Totals</td>
+<td class="rt">36</td>
+<td class="rt">28</td>
+<td class="rt">77.78 </td>
+</tr><tr class="s7">
+<td>Total Bits</td>
+<td class="rt">1726</td>
+<td class="rt">1273</td>
+<td class="rt">73.75 </td>
+</tr><tr class="s7">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">863</td>
+<td class="rt">637</td>
+<td class="rt">73.81 </td>
+</tr><tr class="s7">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">863</td>
+<td class="rt">636</td>
+<td class="rt">73.70 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s8">
+<td>Ports</td>
+<td class="rt">5</td>
+<td class="rt">4</td>
+<td class="rt">80.00 </td>
+</tr><tr class="s9">
+<td>Port Bits</td>
+<td class="rt">388</td>
+<td class="rt">387</td>
+<td class="rt">99.74 </td>
+</tr><tr class="s10">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">194</td>
+<td class="rt">194</td>
+<td class="rt">100.00</td>
+</tr><tr class="s9">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">194</td>
+<td class="rt">193</td>
+<td class="rt">99.48 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s7">
+<td>Signals</td>
+<td class="rt">31</td>
+<td class="rt">24</td>
+<td class="rt">77.42 </td>
+</tr><tr class="s6">
+<td>Signal Bits</td>
+<td class="rt">1338</td>
+<td class="rt">886</td>
+<td class="rt">66.22 </td>
+</tr><tr class="s6">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">669</td>
+<td class="rt">443</td>
+<td class="rt">66.22 </td>
+</tr><tr class="s6">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">669</td>
+<td class="rt">443</td>
+<td class="rt">66.22 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>rst_n</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>a[63:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>b[63:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>result[63:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>quiet_nan[63:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s1_is_special</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_special_result[50:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s1_special_result[63:51]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_sign_a</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_sign_b</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_exp_a[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_exp_b[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_mant_a[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s1_mant_a[55:3]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_mant_a[56]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s1_mant_b[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s1_mant_b[55:3]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s1_mant_b[56]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>sign_a</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>exp_a[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>frac_a[51:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>sign_b</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>exp_b[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>frac_b[51:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>is_nan_a</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>is_nan_b</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>is_inf_a</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>is_inf_b</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>is_zero_a</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>is_zero_b</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s2_is_special</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s2_special_result[50:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s2_special_result[63:51]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s2_sign_res</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s2_exp_res[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s2_mant_res[56:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s3_is_special</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s3_special_result[50:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s3_special_result[63:51]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s3_sign_res</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s3_exp_res[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s3_mant_res[55:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>s3_mant_res[56]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr></table><br clear=all>
+<hr>
+<a name="inst_tag_2_Branch"></a>
+<b>Branch Coverage for Instance : <a href="mod1.html#inst_tag_2" >tb_fpu_sv.dut.subtractor.adder</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s9">
+<td>Branches</td>
+<td></td>
+<td class="rt">37</td>
+<td class="rt">36</td>
+<td class="rt">97.30 </td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">38</td>
+<td class="rt">14</td>
+<td class="rt">14</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">84</td>
+<td class="rt">9</td>
+<td class="rt">9</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">147</td>
+<td class="rt">6</td>
+<td class="rt">6</td>
+<td class="rt">100.00</td>
+</tr><tr class="s8">
+<td>IF</td>
+<td class="rt">192</td>
+<td class="rt">8</td>
+<td class="rt">7</td>
+<td class="rt">87.50 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+38                 if (!rst_n) begin
+                   <font color = "green">-1-</font>  
+39                     s1_is_special <= 0;
+           <font color = "green">            ==></font>
+40                     s1_special_result <= 0;
+41                     s1_sign_a <= 0; s1_sign_b <= 0;
+42                     s1_exp_a <= 0;  s1_exp_b <= 0;
+43                     s1_mant_a <= 0; s1_mant_b <= 0;
+44                 end else begin
+45         
+46                     if (is_nan_a || is_nan_b) begin
+                       <font color = "green">-2-</font>  
+47                         s1_is_special <= 1'b1;
+           <font color = "green">                ==></font>
+48                         s1_special_result <= quiet_nan;
+49                     end else if (is_inf_a && is_inf_b && (sign_a != sign_b)) begin
+                                <font color = "green">-3-</font>  
+50                         s1_is_special <= 1'b1;
+           <font color = "green">                ==></font>
+51                         s1_special_result <= quiet_nan;
+52                     end else if (is_inf_a) begin
+                                <font color = "green">-4-</font>  
+53                         s1_is_special <= 1'b1;
+           <font color = "green">                ==></font>
+54                         s1_special_result <= a;
+55                     end else if (is_inf_b) begin
+                                <font color = "green">-5-</font>  
+56                         s1_is_special <= 1'b1;
+           <font color = "green">                ==></font>
+57                         s1_special_result <= b;
+58                     end else if (is_zero_a && is_zero_b) begin
+                                <font color = "green">-6-</font>  
+59                         s1_is_special <= 1'b1;
+           <font color = "green">                ==></font>
+60                         s1_special_result <= {sign_a & sign_b, 63'b0};
+61                     end else begin
+62                         s1_is_special <= 1'b0;
+63                         s1_sign_a <= sign_a;
+64                         s1_sign_b <= sign_b;
+65                         s1_exp_a <= (exp_a == 0) ? 11'd1 : exp_a;
+                                                    <font color = "green">-7-</font>  
+                                                    <font color = "green">==></font>  
+                                                    <font color = "green">==></font>  
+66                         s1_exp_b <= (exp_b == 0) ? 11'd1 : exp_b;
+                                                    <font color = "green">-8-</font>  
+                                                    <font color = "green">==></font>  
+                                                    <font color = "green">==></font>  
+67                         s1_mant_a <= (exp_a == 0) ? {1'b0, frac_a, 3'b000} : {1'b1, frac_a, 3'b000};
+                                                     <font color = "green">-9-</font>  
+                                                     <font color = "green">==></font>  
+                                                     <font color = "green">==></font>  
+68                         s1_mant_b <= (exp_b == 0) ? {1'b0, frac_b, 3'b000} : {1'b1, frac_b, 3'b000};
+                                                     <font color = "green">-10-</font>  
+                                                     <font color = "green">==></font>  
+                                                     <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>-7-</th><th nowrap width=80>-8-</th><th nowrap width=80>-9-</th><th nowrap width=80>-10-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+84                 if (!rst_n) begin
+                   <font color = "green">-1-</font>  
+85                     s2_is_special <= 0;
+           <font color = "green">            ==></font>
+86                     s2_special_result <= 0;
+87                     s2_sign_res <= 0;
+88                     s2_exp_res <= 0;
+89                     s2_mant_res <= 0;
+90                 end else if (s1_is_special) begin
+                            <font color = "green">-2-</font>  
+91                     s2_is_special <= 1'b1;
+           <font color = "green">            ==></font>
+92                     s2_special_result <= s1_special_result;
+93                 end else begin
+94                     s2_is_special <= 1'b0;
+95                     begin : add_logic
+96                         reg [56:0] m_a, m_b;
+97                         integer shift;
+98                         
+99                         m_a = s1_mant_a;
+100                        m_b = s1_mant_b;
+101                        
+102                        if (s1_exp_a > s1_exp_b) begin
+                           <font color = "green">-3-</font>  
+103                            shift = s1_exp_a - s1_exp_b;
+104                            if (shift >= 56) begin
+                               <font color = "green">-4-</font>      
+105                                m_b = {56'b0, m_b != 0};
+           <font color = "green">                        ==></font>
+106                            end else begin
+107                                m_b = (m_b >> shift) | {56'b0, (m_b & ((64'b1 << shift) - 1)) != 0};
+           <font color = "green">                        ==></font>
+108                            end
+109                            s2_exp_res <= s1_exp_a;
+110                        end else begin
+111                            shift = s1_exp_b - s1_exp_a;
+112                            if (shift >= 56) begin
+                               <font color = "green">-5-</font>      
+113                                m_a = {56'b0, m_a != 0};
+           <font color = "green">                        ==></font>
+114                            end else begin
+115                                m_a = (m_a >> shift) | {56'b0, (m_a & ((64'b1 << shift) - 1)) != 0};
+           <font color = "green">                        ==></font>
+116                            end
+117                            s2_exp_res <= s1_exp_b;
+118                        end
+119        
+120                        if (s1_sign_a == s1_sign_b) begin
+                           <font color = "green">-6-</font>  
+121                            s2_mant_res <= m_a + m_b;
+           <font color = "green">                    ==></font>
+122                            s2_sign_res <= s1_sign_a;
+123                        end else begin
+124                            if (m_a >= m_b) begin
+                               <font color = "green">-7-</font>  
+125                                s2_mant_res <= m_a - m_b;
+           <font color = "green">                        ==></font>
+126                                s2_sign_res <= s1_sign_a;
+127                            end else begin
+128                                s2_mant_res <= m_b - m_a;
+           <font color = "green">                        ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>-7-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+147                if (!rst_n) begin
+                   <font color = "green">-1-</font>  
+148                    s3_is_special <= 0;
+           <font color = "green">            ==></font>
+149                    s3_special_result <= 0;
+150                    s3_sign_res <= 0;
+151                    s3_exp_res <= 0;
+152                    s3_mant_res <= 0;
+153                end else if (s2_is_special) begin
+                            <font color = "green">-2-</font>  
+154                    s3_is_special <= 1'b1;
+           <font color = "green">            ==></font>
+155                    s3_special_result <= s2_special_result;
+156                end else begin
+157                    s3_is_special <= 1'b0;
+158                    s3_sign_res <= s2_sign_res;
+159                    begin : norm_logic
+160                        reg [56:0] m_res;
+161                        reg [10:0] e_res;
+162                        m_res = s2_mant_res;
+163                        e_res = s2_exp_res;
+164                        
+165                        if (m_res == 0) begin
+                           <font color = "green">-3-</font>  
+166                            e_res = 0;
+           <font color = "green">                    ==></font>
+167                            s3_sign_res <= 0;
+168                        end else begin
+169                            if (m_res[56]) begin // Overflow from add
+                               <font color = "green">-4-</font>  
+170                                m_res = (m_res >> 1) | {56'b0, m_res[0] | m_res[1]};
+           <font color = "green">                        ==></font>
+171                                e_res = e_res + 1;
+172                            end else begin
+173                                while ((m_res[55] == 0) && (e_res > 1)) begin
+174                                    m_res = m_res << 1;
+175                                    e_res = e_res - 1;
+176                                end
+177                                if (e_res == 1 && m_res[55] == 0) begin
+                                   <font color = "green">-5-</font>  
+178                                    e_res = 0; // Drop into subnormal
+           <font color = "green">                            ==></font>
+179                                end
+                                   MISSING_ELSE
+           <font color = "green">                        ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+192                if (!rst_n) begin
+                   <font color = "green">-1-</font>  
+193                    result <= 0;
+           <font color = "green">            ==></font>
+194                end else if (s3_is_special) begin
+                            <font color = "green">-2-</font>  
+195                    result <= s3_special_result;
+           <font color = "green">            ==></font>
+196                end else begin
+197                    begin : pack_logic
+198                        reg [56:0] m_res;
+199                        reg [10:0] e_res;
+200                        reg round_bit;
+201                        
+202                        m_res = s3_mant_res;
+203                        e_res = s3_exp_res;
+204                        
+205                        if (m_res != 0) begin
+                           <font color = "green">-3-</font>  
+206                            round_bit = m_res[2] & (m_res[1] | m_res[0] | m_res[3]);
+207                            if (round_bit) begin
+                               <font color = "green">-4-</font>  
+208                                m_res = m_res + 8;
+209                                if (m_res[56]) begin 
+                                   <font color = "red">-5-</font>  
+210                                    m_res = m_res >> 1;
+           <font color = "red">                            ==></font>
+211                                    e_res = e_res + 1;
+212                                end
+                                   MISSING_ELSE
+           <font color = "green">                        ==></font>
+213                            end
+                               MISSING_ELSE
+           <font color = "green">                    ==></font>
+214                        end
+                           MISSING_ELSE
+           <font color = "green">                ==></font>
+215                        
+216                        if (e_res >= 2047) begin
+                           <font color = "green">-6-</font>  
+217                            result <= {s3_sign_res, 11'h7FF, 52'b0};
+           <font color = "green">                    ==></font>
+218                        end else begin
+219                            result <= {s3_sign_res, e_res[10:0], m_res[54:3]};
+           <font color = "green">                    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_1">
+    <li>
+      <a href="#inst_tag_1_Line">Line</a>    </li>
+    <li>
+      <a href="#inst_tag_1_Cond">Cond</a>    </li>
+    <li>
+      <a href="#inst_tag_1_Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_1_Branch">Branch</a>    </li>
+  </ul>
+  <ul name="inst_tag_2">
+    <li>
+      <a href="#inst_tag_2_Line">Line</a>    </li>
+    <li>
+      <a href="#inst_tag_2_Cond">Cond</a>    </li>
+    <li>
+      <a href="#inst_tag_2_Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_2_Branch">Branch</a>    </li>
+  </ul>
+  <ul name="tag_fp_add">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

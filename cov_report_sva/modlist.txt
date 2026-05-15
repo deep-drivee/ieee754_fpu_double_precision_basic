@@ -1,0 +1,21 @@
+Design Module List
+
+Total Module Definition Coverage Summary 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT 
+ 90.81  93.18  90.93  84.28  87.50  89.00 100.00 
+
+
+Total modules in report: 10
+-------------------------------------------------------------------------------
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT NAME                         
+ 28.48  30.43  25.00 --     --      30.00 --     uvm_custom_install_recording 
+ 83.69  90.43  84.07  88.38  75.00  80.56 --     fp_div                       
+ 87.50 100.00 --      75.00 --     --     --     tb_fpu_sv                    
+ 89.76  96.13  89.83  80.11 --      92.98 --     fp_fma                       
+ 91.87  98.20  93.48  78.04 --      97.78 --     fp_mul                       
+ 92.04  98.08  99.02  73.75 --      97.30 --     fp_add                       
+ 96.64  96.77 100.00  99.75 100.00  86.67 --     fpu                          
+ 99.65 --     --      99.31 --     --     100.00 fpu_assertions               
+ 99.81 --     --      99.81 --     --     --     fp_sub                       
+ 99.81 --     --      99.81 --     --     --     fpu_if                       
+

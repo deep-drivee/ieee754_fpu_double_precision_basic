@@ -1,0 +1,63 @@
+<session version="1.1" release="U-2023.03" timestp="2026-05-12 14:18:18 GMT">
+  <info>
+    <attr name="datetime" value="Tue May 12 19:48:20 2026
+"/>
+    <attr name="command" value="urg -dir simv_sva_cov.vdb -report cov_report_sva -format both"/>
+    <attr name="top_instance" value="tb_fpu_sv,uvm_custom_install_recording"/>
+  </info>
+  <hvp>
+    <datadef>
+      <metdef name="Line" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Cond" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Toggle" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="FSM" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Branch" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Assert" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Group" type="percent" aggregator="average" builtin="1" />
+    </datadef>
+  </hvp>
+  <old_coverage>
+  <scope type="top" name="top">
+    <metric name="Line" value="594/632" />
+    <metric name="Cond" value="592/642" />
+    <metric name="Toggle" value="9591/11596" />
+    <metric name="FSM" value="7/8" />
+    <metric name="Branch" value="214/237" />
+    <metric name="Assert" value="5/5" />
+    <metric name="Group" value="100%" />
+  </scope>
+  <scope type="instance" name="top">
+  </scope>
+  <scope type="group" name="top">
+    <scope type="group" name="$unit::fpu_coverage::cg_cross">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::fpu_coverage::cg_result">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::fpu_coverage::cg_input_b">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::fpu_coverage::cg_input_a">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::fpu_coverage::cg_opcode">
+      <metric name="Group" value="100%" />
+    </scope>
+  </scope>
+  <scope type="assert" name="Statistics">
+    <scorelist type="total" name="Design Hierarchy Assert">
+      <score name="Assert" value="5/5" />
+      <score name="Score" value="100.00" />
+    </scorelist>
+    <scorelist type="total" name="Module List Assert">
+      <score name="Assert" value="5/5" />
+      <score name="Score" value="100.00" />
+    </scorelist>
+    <scorelist type="total" name="Assertion">
+      <score name="Assert" value="5/5" />
+      <score name="Score" value="100.00" />
+    </scorelist>
+  </scope>
+  </old_coverage>
+</session>

@@ -1,0 +1,32 @@
+Design Hierarchy
+
+
+----------------
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT           
+ 92.03  96.39  92.63  82.71  87.50  92.95 100.00 tb_fpu_sv 
+  
+  ----------------
+  SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT     
+   90.22  96.33  92.63  81.67  87.50  92.95 --     dut 
+    
+    ----------------
+    SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT            
+     92.04  98.08  99.02  73.75 --      97.30 --     adder      
+     83.69  90.43  84.07  88.38  75.00  80.56 --     divider    
+     89.76  96.13  89.83  80.11 --      92.98 --     fma_unit   
+     91.87  98.20  93.48  78.04 --      97.78 --     multiplier 
+     93.54  98.08  99.02  79.75 --      97.30 --     subtractor 
+      
+      ----------------
+      SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT       
+       92.04  98.08  99.02  73.75 --      97.30 --     adder 
+  
+  ----------------
+  SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT         
+   99.65 --     --      99.31 --     --     100.00 fpu_sva 
+   99.81 --     --      99.81 --     --     --     vif     
+
+----------------
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT                              
+ 28.48  30.43  25.00 --     --      30.00 --     uvm_custom_install_recording 
+

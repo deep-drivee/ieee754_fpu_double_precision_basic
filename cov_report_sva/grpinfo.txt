@@ -1,0 +1,1008 @@
+Group : $unit::fpu_coverage::cg_cross
+
+===============================================================================
+Group : $unit::fpu_coverage::cg_cross
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+100.00 100.00    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/vuser/speed/projects/sv_tb/fpu_coverage.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                      
+100.00 1      100    1        64           64            tb_fpu_sv.me.obj.cg_cross 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::fpu_coverage::cg_cross
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 15       0         15      100.00  
+Crosses   65       0         65      100.00  
+
+
+Variables for Group  $unit::fpu_coverage::cg_cross
+
+
+VARIABLE      EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_opcode     5        0         5       100.00  100  1      1        0                    
+cp_a_class    3        0         3       100.00  100  1      1        0                    
+cp_b_class    3        0         3       100.00  100  1      1        0                    
+cp_sign_combo 4        0         4       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::fpu_coverage::cg_cross
+
+
+CROSS         EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_op_x_a_x_b 45       0         45      100.00  100  1      1        0                     
+cx_op_x_sign  20       0         20      100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_opcode
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_opcode
+
+
+Bins
+
+NAME COUNT AT LEAST 
+FMA  3810  1        
+DIV  5154  1        
+MUL  3783  1        
+SUB  3930  1        
+ADD  3843  1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_a_class
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_a_class
+
+
+Bins
+
+NAME     COUNT AT LEAST 
+inf_nan  162   1        
+normal   20277 1        
+zero_sub 81    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_b_class
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_b_class
+
+
+Bins
+
+NAME     COUNT AT LEAST 
+inf_nan  163   1        
+normal   20274 1        
+zero_sub 83    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_sign_combo
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_sign_combo
+
+
+Bins
+
+NAME COUNT AT LEAST 
+nn   4978  1        
+np   5115  1        
+pn   5146  1        
+pp   5281  1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_op_x_a_x_b
+
+
+Samples crossed: cp_opcode cp_a_class cp_b_class
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 45       0         45      100.00          
+
+
+Automatically Generated Cross Bins for cx_op_x_a_x_b
+
+
+Bins
+
+cp_opcode cp_a_class cp_b_class COUNT AT LEAST 
+FMA       inf_nan    inf_nan    16    1        
+FMA       inf_nan    normal     8     1        
+FMA       inf_nan    zero_sub   8     1        
+FMA       normal     inf_nan    9     1        
+FMA       normal     normal     3748  1        
+FMA       normal     zero_sub   4     1        
+FMA       zero_sub   inf_nan    8     1        
+FMA       zero_sub   normal     5     1        
+FMA       zero_sub   zero_sub   4     1        
+DIV       inf_nan    inf_nan    16    1        
+DIV       inf_nan    normal     8     1        
+DIV       inf_nan    zero_sub   8     1        
+DIV       normal     inf_nan    8     1        
+DIV       normal     normal     5093  1        
+DIV       normal     zero_sub   5     1        
+DIV       zero_sub   inf_nan    8     1        
+DIV       zero_sub   normal     4     1        
+DIV       zero_sub   zero_sub   4     1        
+MUL       inf_nan    inf_nan    16    1        
+MUL       inf_nan    normal     8     1        
+MUL       inf_nan    zero_sub   8     1        
+MUL       normal     inf_nan    9     1        
+MUL       normal     normal     3721  1        
+MUL       normal     zero_sub   5     1        
+MUL       zero_sub   inf_nan    8     1        
+MUL       zero_sub   normal     4     1        
+MUL       zero_sub   zero_sub   4     1        
+SUB       inf_nan    inf_nan    16    1        
+SUB       inf_nan    normal     9     1        
+SUB       inf_nan    zero_sub   8     1        
+SUB       normal     inf_nan    8     1        
+SUB       normal     normal     3868  1        
+SUB       normal     zero_sub   5     1        
+SUB       zero_sub   inf_nan    8     1        
+SUB       zero_sub   normal     4     1        
+SUB       zero_sub   zero_sub   4     1        
+ADD       inf_nan    inf_nan    16    1        
+ADD       inf_nan    normal     9     1        
+ADD       inf_nan    zero_sub   8     1        
+ADD       normal     inf_nan    9     1        
+ADD       normal     normal     3781  1        
+ADD       normal     zero_sub   4     1        
+ADD       zero_sub   inf_nan    8     1        
+ADD       zero_sub   normal     4     1        
+ADD       zero_sub   zero_sub   4     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_op_x_sign
+
+
+Samples crossed: cp_opcode cp_sign_combo
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 20       0         20      100.00          
+
+
+Automatically Generated Cross Bins for cx_op_x_sign
+
+
+Bins
+
+cp_opcode cp_sign_combo COUNT AT LEAST 
+FMA       nn            938   1        
+FMA       np            934   1        
+FMA       pn            954   1        
+FMA       pp            984   1        
+DIV       nn            1252  1        
+DIV       np            1281  1        
+DIV       pn            1281  1        
+DIV       pp            1340  1        
+MUL       nn            898   1        
+MUL       np            968   1        
+MUL       pn            942   1        
+MUL       pp            975   1        
+SUB       nn            950   1        
+SUB       np            1009  1        
+SUB       pn            977   1        
+SUB       pp            994   1        
+ADD       nn            940   1        
+ADD       np            923   1        
+ADD       pn            992   1        
+ADD       pp            988   1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_fpu_sv.me.obj.cg_cross
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                          
+100.00 100.00    1      100    1        1            64           64                    $unit::fpu_coverage::cg_cross 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_fpu_sv.me.obj.cg_cross
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 15       0         15      100.00  
+Crosses   65       0         65      100.00  
+
+
+Variables for Group Instance  tb_fpu_sv.me.obj.cg_cross
+
+
+VARIABLE      EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_opcode     5        0         5       100.00  100  1      1        0                    
+cp_a_class    3        0         3       100.00  100  1      1        0                    
+cp_b_class    3        0         3       100.00  100  1      1        0                    
+cp_sign_combo 4        0         4       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_fpu_sv.me.obj.cg_cross
+
+
+CROSS         EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_op_x_a_x_b 45       0         45      100.00  100  1      1        0                     
+cx_op_x_sign  20       0         20      100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_opcode
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_opcode
+
+
+Bins
+
+NAME COUNT AT LEAST 
+FMA  3810  1        
+DIV  5154  1        
+MUL  3783  1        
+SUB  3930  1        
+ADD  3843  1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_a_class
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_a_class
+
+
+Bins
+
+NAME     COUNT AT LEAST 
+inf_nan  162   1        
+normal   20277 1        
+zero_sub 81    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_b_class
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_b_class
+
+
+Bins
+
+NAME     COUNT AT LEAST 
+inf_nan  163   1        
+normal   20274 1        
+zero_sub 83    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_sign_combo
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_sign_combo
+
+
+Bins
+
+NAME COUNT AT LEAST 
+nn   4978  1        
+np   5115  1        
+pn   5146  1        
+pp   5281  1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_op_x_a_x_b
+
+
+Samples crossed: cp_opcode cp_a_class cp_b_class
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 45       0         45      100.00          
+
+
+Automatically Generated Cross Bins for cx_op_x_a_x_b
+
+
+Bins
+
+cp_opcode cp_a_class cp_b_class COUNT AT LEAST 
+FMA       inf_nan    inf_nan    16    1        
+FMA       inf_nan    normal     8     1        
+FMA       inf_nan    zero_sub   8     1        
+FMA       normal     inf_nan    9     1        
+FMA       normal     normal     3748  1        
+FMA       normal     zero_sub   4     1        
+FMA       zero_sub   inf_nan    8     1        
+FMA       zero_sub   normal     5     1        
+FMA       zero_sub   zero_sub   4     1        
+DIV       inf_nan    inf_nan    16    1        
+DIV       inf_nan    normal     8     1        
+DIV       inf_nan    zero_sub   8     1        
+DIV       normal     inf_nan    8     1        
+DIV       normal     normal     5093  1        
+DIV       normal     zero_sub   5     1        
+DIV       zero_sub   inf_nan    8     1        
+DIV       zero_sub   normal     4     1        
+DIV       zero_sub   zero_sub   4     1        
+MUL       inf_nan    inf_nan    16    1        
+MUL       inf_nan    normal     8     1        
+MUL       inf_nan    zero_sub   8     1        
+MUL       normal     inf_nan    9     1        
+MUL       normal     normal     3721  1        
+MUL       normal     zero_sub   5     1        
+MUL       zero_sub   inf_nan    8     1        
+MUL       zero_sub   normal     4     1        
+MUL       zero_sub   zero_sub   4     1        
+SUB       inf_nan    inf_nan    16    1        
+SUB       inf_nan    normal     9     1        
+SUB       inf_nan    zero_sub   8     1        
+SUB       normal     inf_nan    8     1        
+SUB       normal     normal     3868  1        
+SUB       normal     zero_sub   5     1        
+SUB       zero_sub   inf_nan    8     1        
+SUB       zero_sub   normal     4     1        
+SUB       zero_sub   zero_sub   4     1        
+ADD       inf_nan    inf_nan    16    1        
+ADD       inf_nan    normal     9     1        
+ADD       inf_nan    zero_sub   8     1        
+ADD       normal     inf_nan    9     1        
+ADD       normal     normal     3781  1        
+ADD       normal     zero_sub   4     1        
+ADD       zero_sub   inf_nan    8     1        
+ADD       zero_sub   normal     4     1        
+ADD       zero_sub   zero_sub   4     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_op_x_sign
+
+
+Samples crossed: cp_opcode cp_sign_combo
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 20       0         20      100.00          
+
+
+Automatically Generated Cross Bins for cx_op_x_sign
+
+
+Bins
+
+cp_opcode cp_sign_combo COUNT AT LEAST 
+FMA       nn            938   1        
+FMA       np            934   1        
+FMA       pn            954   1        
+FMA       pp            984   1        
+DIV       nn            1252  1        
+DIV       np            1281  1        
+DIV       pn            1281  1        
+DIV       pp            1340  1        
+MUL       nn            898   1        
+MUL       np            968   1        
+MUL       pn            942   1        
+MUL       pp            975   1        
+SUB       nn            950   1        
+SUB       np            1009  1        
+SUB       pn            977   1        
+SUB       pp            994   1        
+ADD       nn            940   1        
+ADD       np            923   1        
+ADD       pn            992   1        
+ADD       pp            988   1        
+
+
+Group : $unit::fpu_coverage::cg_result
+
+===============================================================================
+Group : $unit::fpu_coverage::cg_result
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+100.00 100.00    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/vuser/speed/projects/sv_tb/fpu_coverage.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                       
+100.00 1      100    1        64           64            tb_fpu_sv.me.obj.cg_result 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::fpu_coverage::cg_result
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 6        0         6       100.00  
+
+
+Variables for Group  $unit::fpu_coverage::cg_result
+
+
+VARIABLE     EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_exp_class 6        0         6       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_exp_class
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 6        0         6       100.00  
+
+
+User Defined Bins for cp_exp_class
+
+
+Bins
+
+NAME      COUNT AT LEAST 
+inf_nan   1670  1        
+huge_val  219   1        
+normal_hi 9971  1        
+normal_lo 6129  1        
+tiny      613   1        
+zero      1918  1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_fpu_sv.me.obj.cg_result
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                           
+100.00 100.00    1      100    1        1            64           64                    $unit::fpu_coverage::cg_result 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_fpu_sv.me.obj.cg_result
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 6        0         6       100.00  
+
+
+Variables for Group Instance  tb_fpu_sv.me.obj.cg_result
+
+
+VARIABLE     EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_exp_class 6        0         6       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_exp_class
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 6        0         6       100.00  
+
+
+User Defined Bins for cp_exp_class
+
+
+Bins
+
+NAME      COUNT AT LEAST 
+inf_nan   1670  1        
+huge_val  219   1        
+normal_hi 9971  1        
+normal_lo 6129  1        
+tiny      613   1        
+zero      1918  1        
+
+
+Group : $unit::fpu_coverage::cg_input_b
+
+===============================================================================
+Group : $unit::fpu_coverage::cg_input_b
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+100.00 100.00    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/vuser/speed/projects/sv_tb/fpu_coverage.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                        
+100.00 1      100    1        64           64            tb_fpu_sv.me.obj.cg_input_b 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::fpu_coverage::cg_input_b
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 9        0         9       100.00  
+
+
+Variables for Group  $unit::fpu_coverage::cg_input_b
+
+
+VARIABLE     EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_exp_class 7        0         7       100.00  100  1      1        0                    
+cp_sign      2        0         2       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_exp_class
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 7        0         7       100.00  
+
+
+User Defined Bins for cp_exp_class
+
+
+Bins
+
+NAME      COUNT AT LEAST 
+inf_nan   163   1        
+huge_val  370   1        
+normal_hi 8728  1        
+normal_lo 8671  1        
+tiny      2505  1        
+subnormal 83    1        
+zero      83    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_sign
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_sign
+
+
+Bins
+
+NAME     COUNT AT LEAST 
+negative 10124 1        
+positive 10396 1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_fpu_sv.me.obj.cg_input_b
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                            
+100.00 100.00    1      100    1        1            64           64                    $unit::fpu_coverage::cg_input_b 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_fpu_sv.me.obj.cg_input_b
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 9        0         9       100.00  
+
+
+Variables for Group Instance  tb_fpu_sv.me.obj.cg_input_b
+
+
+VARIABLE     EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_exp_class 7        0         7       100.00  100  1      1        0                    
+cp_sign      2        0         2       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_exp_class
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 7        0         7       100.00  
+
+
+User Defined Bins for cp_exp_class
+
+
+Bins
+
+NAME      COUNT AT LEAST 
+inf_nan   163   1        
+huge_val  370   1        
+normal_hi 8728  1        
+normal_lo 8671  1        
+tiny      2505  1        
+subnormal 83    1        
+zero      83    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_sign
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_sign
+
+
+Bins
+
+NAME     COUNT AT LEAST 
+negative 10124 1        
+positive 10396 1        
+
+
+Group : $unit::fpu_coverage::cg_input_a
+
+===============================================================================
+Group : $unit::fpu_coverage::cg_input_a
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+100.00 100.00    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/vuser/speed/projects/sv_tb/fpu_coverage.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                        
+100.00 1      100    1        64           64            tb_fpu_sv.me.obj.cg_input_a 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::fpu_coverage::cg_input_a
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 9        0         9       100.00  
+
+
+Variables for Group  $unit::fpu_coverage::cg_input_a
+
+
+VARIABLE     EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_exp_class 7        0         7       100.00  100  1      1        0                    
+cp_sign      2        0         2       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_exp_class
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 7        0         7       100.00  
+
+
+User Defined Bins for cp_exp_class
+
+
+Bins
+
+NAME      COUNT AT LEAST 
+inf_nan   162   1        
+huge_val  358   1        
+normal_hi 8573  1        
+normal_lo 8304  1        
+tiny      3042  1        
+subnormal 81    1        
+zero      81    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_sign
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_sign
+
+
+Bins
+
+NAME     COUNT AT LEAST 
+negative 10093 1        
+positive 10427 1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_fpu_sv.me.obj.cg_input_a
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                            
+100.00 100.00    1      100    1        1            64           64                    $unit::fpu_coverage::cg_input_a 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_fpu_sv.me.obj.cg_input_a
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 9        0         9       100.00  
+
+
+Variables for Group Instance  tb_fpu_sv.me.obj.cg_input_a
+
+
+VARIABLE     EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_exp_class 7        0         7       100.00  100  1      1        0                    
+cp_sign      2        0         2       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_exp_class
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 7        0         7       100.00  
+
+
+User Defined Bins for cp_exp_class
+
+
+Bins
+
+NAME      COUNT AT LEAST 
+inf_nan   162   1        
+huge_val  358   1        
+normal_hi 8573  1        
+normal_lo 8304  1        
+tiny      3042  1        
+subnormal 81    1        
+zero      81    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_sign
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_sign
+
+
+Bins
+
+NAME     COUNT AT LEAST 
+negative 10093 1        
+positive 10427 1        
+
+
+Group : $unit::fpu_coverage::cg_opcode
+
+===============================================================================
+Group : $unit::fpu_coverage::cg_opcode
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+100.00 100.00    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/vuser/speed/projects/sv_tb/fpu_coverage.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                       
+100.00 1      100    1        64           64            tb_fpu_sv.me.obj.cg_opcode 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::fpu_coverage::cg_opcode
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 5        0         5       100.00  
+
+
+Variables for Group  $unit::fpu_coverage::cg_opcode
+
+
+VARIABLE  EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_opcode 5        0         5       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_opcode
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_opcode
+
+
+Bins
+
+NAME COUNT AT LEAST 
+FMA  3810  1        
+DIV  5154  1        
+MUL  3783  1        
+SUB  3930  1        
+ADD  3843  1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_fpu_sv.me.obj.cg_opcode
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                           
+100.00 100.00    1      100    1        1            64           64                    $unit::fpu_coverage::cg_opcode 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_fpu_sv.me.obj.cg_opcode
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 5        0         5       100.00  
+
+
+Variables for Group Instance  tb_fpu_sv.me.obj.cg_opcode
+
+
+VARIABLE  EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_opcode 5        0         5       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_opcode
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_opcode
+
+
+Bins
+
+NAME COUNT AT LEAST 
+FMA  3810  1        
+DIV  5154  1        
+MUL  3783  1        
+SUB  3930  1        
+ADD  3843  1        
+
+
